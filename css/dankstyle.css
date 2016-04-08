@@ -1,0 +1,242 @@
+@font-face {
+  font-family: 'Minion';
+  src: url('../fonts/minion.ttf')
+}
+
+@font-face {
+  font-family: 'Gotham';
+  src: url('../fonts/Gotham/GOTHAM-BOLD.ttf');
+}
+
+
+html {
+	font-family: 'Minion';
+}
+
+h1, h3 {
+	font-family: 'Gotham';
+}
+
+h1 {
+	letter-spacing: -3px;
+}
+
+/* DIG BY GRACE KONSTANTIN */
+.lit#konstantin {
+	height: 100vh;
+	background-image: url(../img/dig_cover.jpg);
+	background-size: cover;
+	background-attachment: fixed;
+}
+
+.lit#konstantin article {
+	/*width: 40%;*/
+	/*margin: 0 auto;*/
+	padding-top: 10vh;
+
+}
+
+.lit#konstantin #container2 {
+	clear:left;
+	float:left;
+	width:100%;
+	overflow:hidden;/*
+	background:#ffa7a7;  column 2 background colour */
+}
+.lit#konstantin #container1 {
+	float:left;
+	width:100%;
+	position:relative;
+	right:50%;
+	/*background:#fff689;  column 1 background colour */
+}
+.lit#konstantin .title {
+	float:left;
+	position:relative;
+	left:52%;
+	overflow:hidden;
+}
+
+.lit#konstantin h1 {
+	font-size: 11.5em;
+    margin-top: 60px;
+    margin-left: 0px;
+    margin-right: -110px;
+	transform: rotate(-90deg);
+	transform-origin: left top 10;
+}
+
+.lit#konstantin .body {
+	float:left;
+	width: 46%;
+	position:relative;
+	left:56%;
+	overflow:hidden;
+}
+
+/* GIRLHOOD AFTER RILKE BY SARAH CHIN */
+.lit#chin {
+	background-color: #FBF4F4;
+}
+
+.lit#chin article {
+	width: 70%;
+	margin: 0 auto;
+	padding-top: 10vh;
+}
+
+.lit#chin .copy {
+	width: 90%;
+	margin: 0 auto;
+	font-size: 1.1em;
+}
+
+.lit#chin .title {
+	text-align: right;
+}
+
+.lit#chin h1 {
+	text-transform: uppercase;
+	font-size: 5em;
+	line-height: 1em;
+}
+
+.lit#chin h1, .lit#chin h3 {
+	margin: 0;
+}
+
+.lit#chin .body {
+	text-align: justify;
+}
+
+.lit#chin img {
+	width: 100%;
+}
+
+
+/* PAPA BY CARISSA FLUERY */
+.lit#fluery {
+	background-color: #FBF4F4;
+}
+
+.lit#fluery article {
+	width: 70%;
+	margin: 0 auto;
+}
+
+.lit#fluery .title {
+	text-align: left;
+	padding-bottom: 3em;
+}
+
+.lit#fluery h1 {
+	text-transform: uppercase;
+	font-size: 5em;
+	line-height: 1em;
+}
+
+.lit#fluery h1, .lit#fluery h3 {
+	margin: 0;
+}
+
+.lit#fluery .body {
+    -moz-column-count: 3;
+    -moz-column-gap: 30px;
+    -webkit-column-count: 3;
+    -webkit-column-gap: 30px;
+    height: 840px;
+    padding-bottom: 10%;
+}
+
+.lit#fluery #first {
+	-webkit-margin-before: 0em;
+}
+
+.lit#fluery img {
+	width: 100%;
+}
+
+/* 01.09.2014 BY EMMA PINkSY */
+.lit#pinksy article {
+	width: 30%;
+	margin: 0 auto;
+}
+
+.lit#pinksy .body {
+	text-align: justify;
+}
+
+.lit#pinksy .title {
+	text-align: center;
+}
+
+.lit#pinksy h1 {
+	font-size: 4em;
+	margin-bottom: 0px;
+	color: #300066;
+}
+
+.lit#pinksy h3 {
+	font-size: 1.5em;
+	margin-top: 0px;
+}
+
+.lit#pinksy p {
+	text-indent: 35px;
+	margin: 0px;
+}
+
+.lit#pinksy .body > h1 {
+	text-align: center;
+	margin: 0px;
+	margin-bottom: -30px;
+}
+
+.lit#pinksy img {
+	display: block;
+	margin: 75px auto;
+	width: 40%;
+}
+
+/* FADING BY JAANVI SANT */
+
+.lit#sant .container{
+	width: 60%;
+	margin: 0 auto;
+}
+
+.lit#sant article {
+	width: 50%;
+	float: right;
+}
+
+.lit#sant #sil {
+	width: 45%;
+	float: left;
+	margin: 75px auto;
+	background-color: #F6F6F6;
+}
+
+.lit#sant #train {
+	width: 100%;
+}
+
+.lit#sant .body {
+	text-align: justify;
+}
+
+.lit#sant .title {
+	text-align: left;
+}
+
+.lit#sant h1 {
+	font-size: 6em;
+	margin-bottom: 0px;
+}
+
+.lit#sant h3 {
+	font-size: 1.5em;
+	margin-top: 0px;
+}
+
+
