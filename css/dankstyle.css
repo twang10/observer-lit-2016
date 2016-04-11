@@ -11,6 +11,13 @@
 
 html {
 	font-family: 'Minion';
+	overflow-y: scroll;
+ 	overflow-x: hidden;
+ 	position: relative;
+}
+
+body {
+	overflow-x: hidden;
 }
 
 h1, h3 {
@@ -19,6 +26,10 @@ h1, h3 {
 
 h1 {
 	letter-spacing: -3px;
+}
+
+.lit {
+	display: block;
 }
 
 /* DIG BY GRACE KONSTANTIN */
@@ -164,6 +175,7 @@ h1 {
 
 .lit#pinksy .body {
 	text-align: justify;
+	font-size: 1.1em;
 }
 
 .lit#pinksy .title {
@@ -199,6 +211,9 @@ h1 {
 }
 
 /* FADING BY JAANVI SANT */
+.lit#sant {
+	display: inline-block;
+}
 
 .lit#sant .container{
 	width: 60%;
@@ -214,15 +229,17 @@ h1 {
 	width: 45%;
 	float: left;
 	margin: 75px auto;
-	background-color: #F6F6F6;
+	display: block;
 }
 
 .lit#sant #train {
+	display: block;
 	width: 100%;
 }
 
 .lit#sant .body {
 	text-align: justify;
+	/*padding-bottom: 10vh;*/
 }
 
 .lit#sant .title {
@@ -237,6 +254,295 @@ h1 {
 .lit#sant h3 {
 	font-size: 1.5em;
 	margin-top: 0px;
+}`
+
+/* BIG FORKS by GABBY BONFIGLIO */
+.lit#bonfiglio {
+	padding-top: 10vh;
+	overflow-x: hidden;
+	position: fixed;
 }
+
+.lit#bonfiglio article {
+	width: 50%;
+	margin: 0 auto;
+}
+
+.lit#bonfiglio .title {
+	text-align: center;
+	margin-bottom: 3em;
+}
+
+.lit#bonfiglio h1 {
+	color: #87BFDB;
+	font-size: 7em;
+	margin-bottom: 0px;
+	line-height: 1em;
+}
+
+.lit#bonfiglio h3 {
+	margin-top: 0px;
+}
+
+.lit#bonfiglio .body {
+	text-align: justify;
+	font-size: 1.2em;
+	overflow-x: hidden;
+}
+
+.lit#bonfiglio p {
+	text-indent: 35px;
+	/*margin: 0px;*/
+}
+
+.lit#bonfiglio #dough {
+	z-index: -1;
+	width: 50%;
+	position: absolute;
+	left: 80%;
+}
+
+.lit#bonfiglio #butter {
+	z-index: -1;
+	width: 50%;
+	position: absolute;
+	left: 80%;
+	overflow: hidden;
+
+}
+
+.lit#bonfiglio #bowl {
+	z-index: -1;
+	width: 50%;
+	position: absolute;
+	right: 80%; 
+}
+
+.lit#bonfiglio #fork {
+	z-index: -1;
+	width: 50%;
+	display: block;
+	margin: 3em auto;
+}
+
+/* EATON HALL BY BEN KESSLEN */
+.lit#kesslen .title {
+	height: 100vh;
+	background-image: url(../img/kesslen2.jpg);
+	background-size: cover;
+	background-attachment: fixed;
+	color: white;
+	margin: 0 auto;
+	width: 100%;
+	text-align: center; 
+	display: flex;
+    justify-content:center;
+    align-content:center;
+    flex-direction:column;
+}
+
+.lit#kesslen h1 {
+	margin-bottom: 0em;
+	font-size: 5em; 
+}
+
+.lit#kesslen h3 {
+	margin-top: 0em;
+}
+
+.lit#kesslen .body {
+	text-align: justify;
+	font-size: 1.2em;
+	padding: 3em 0em;background-color: #ffe0e0;
+	background-image: url("http://www.transparenttextures.com/patterns/axiom-pattern.png");
+	/* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */}
+
+.lit#kesslen p {
+	width: 70%;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 0;
+}
+
+.lit#kesslen span {
+	font-weight: bold;
+}
+
+/* HELLO BY JUDY CHEN */
+.lit#judy {
+	height: 100vh;
+	background-image: url(../img/chen.jpg);
+	background-size: cover;
+	/*background-attachment: fixed;*/
+}
+
+.lit#judy article {
+	margin: 0 auto;
+    margin-right: 10%;
+    padding: 2% 5%;
+    width: 20%;
+	color: white;
+	font-weight: bold;
+	background-color: rgba(0,0,0,.5);
+}
+
+.lit#judy h1, .lit#judy h3 {
+	text-align: center;
+	margin: 0;
+	color: white  ;
+}
+
+.lit#judy h1 {
+	font-size: 3em;
+}
+
+.lit#judy .body {
+	font-size: 1.2em;
+}
+
+.lit#judy .left {
+	text-align: left;
+	margin: 0;
+}
+
+.lit#judy .middle {
+	text-align: center;
+	margin: 0;
+}
+
+.lit#judy .right {
+	text-align: right;
+	margin:0;
+}
+
+/* DON'T TELL BY TESS ROSS-CALLAHAN */
+.lit#tess {
+	background-image: url(../img/tess.jpg);
+	background-size: cover;
+	/*background-attachment: fixed;*/
+	color: white;
+}
+
+.lit#tess .title {
+	margin-bottom: 1em;
+}
+
+.lit#tess h1, .lit#tess h3 {
+	text-align: left;
+	margin: 0;
+}
+
+.lit#tess h1 {
+	margin-bottom: -20px;
+	font-size: 5em;
+}
+
+.lit#tess article {
+	width: 50%;
+	padding: 2em 2em ;
+	background-color: rgba(0,0,0,.75);
+	font-size: 1.1em;
+}
+
+.lit#tess .body {
+	text-align: justify;
+}
+
+.lit#tess p {
+	text-indent: 35px;
+	margin: 0px;
+	margin-bottom: 12px;
+}
+
+/* DIlemma BIRDS by conor ward*/
+.lit#ward .banner {
+	height: 100vh;
+	background-image: url(../img/ward1.jpg);
+	background-size: cover;
+	background-attachment: fixed;
+}
+
+
+.lit#ward h1, .lit#ward h3 {
+	text-align: center;
+	margin: 0;
+}
+
+.lit#ward h1 {
+	margin-bottom: -20px;
+	font-size: 4em;
+}
+
+.lit#ward .title {
+	margin-bottom: 2em;
+}
+
+.lit#ward article {
+	width: 50%;
+	margin: 0 auto;
+	border-style: solid;
+	border-left: thick double black;
+	border-right: thick double black;
+	border-top: none;
+	border-bottom: none;
+	padding: 3em 5em;
+}
+
+.lit#ward .body {
+	text-align: justify;
+	font-size: 1.1em;
+}
+
+.lit#ward p {
+	text-indent: 35px;
+	margin: 0px;
+	margin-bottom: 12px;
+}
+
+.lit#ward img {
+	width: 100%;
+	margin-top: 3em;
+}
+
+/* Elegy by Tess Hinchman */
+.lit#hinchman {
+
+}
+
+.lit#hinchman .title {
+	height: 100vh;
+	background-image: url(../img/hinchman.jpg);
+	background-size: cover;
+	display: flex;
+    align-items: center;
+    /*line-height: 1em;*/
+}
+
+.lit#hinchman h1 {
+	font-size: 4em;
+	width: 60%;
+	line-height: 1em;
+	padding-left: 15%;
+}
+.lit#hinchman h1 > span {
+	font-size: 24px;
+	letter-spacing: 0px;
+}
+
+.lit#hinchman .body {
+	padding-left: 15%;
+	font-size: 1.3em;
+	margin-top: 10%;
+	width: 30%;
+	float: left;
+}
+
+.lit#hinchman img {
+	z-index: -1;
+	width: 20%;
+	position: absolute;
+	left: 60%; 
+}
+
 
 
