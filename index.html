@@ -1,15 +1,29 @@
+<!-- I'm very sorry this site is responsive or built for mobile..! -->
+<!-- I did a really sloppy job of throwing this up, I was on a v small time budget. -->
+
 <!doctype html>
 <html class="no-js" lang="">
 
 <head>
-    <meta charset="utf-8">
-    <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <title></title>
-    <meta name="description" content="">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge"> 
+        <meta name="viewport" content="width=device-width, initial-scale=1"> 
+        <title>Tufts Observer Multimedia | #TheLitIssue 2016</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta property="og:url"           content="http://tuftsobserver.org/multimedia/lit2016/" />
+        <meta property="og:type"          content="article" />
+        <meta property="og:title"         content="Tufts Observer | #TheLitIssue 2016" />
+        <meta property="og:description"   content="#TheLitIssue 2016" />
+        <meta property="og:image"         content="http://i.imgur.com/b6xD4bW.jpg" />
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+        <meta name="twitter:card" content="summary_large_image">
+        <meta name="twitter:site" content="@tuftsobserver">
+        <meta name="twitter:creator" content="@tuftsobserver">
+        <meta name="twitter:description" content="#TheLitIssue 2016">
+        <meta name="twitter:title" content="Tufts Observer | #TheLitIssue 2016">
 
-    <link rel="apple-touch-icon" href="apple-touch-icon.png">
-    <!-- Place favicon.ico in the root directory -->
+        <meta name="twitter:image:src" content="http://i.imgur.com/b6xD4bW.jpg">
 
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/main.css">
@@ -19,20 +33,227 @@
     <script src="js/wow.js"></script>
     <script>
         new WOW().init();
+
+            var isMobile = function() {
+               console.log("Navigator: " + navigator.userAgent);
+               return /(iphone|ipod|ipad|android|blackberry|windows ce|palm|symbian)/i.test(navigator.userAgent);
+             };
+            if (isMobile()) {
+                document.location = "http://tuftsobserver.org/tag/issue-5-spring-2016/";
+            }
     </script>
 </head>
 
 <body>
+<nav id="cd-vertical-nav">
+        <ul>
+            <li>
+                <a href="#cover" data-number="1">
+                    <span class="cd-dot"></span>
+                    <span class="cd-label">Home</span>
+                </a>
+            </li>
+            <li>
+                <a href="#konstantin" data-number="2">
+                    <span class="cd-dot"></span>
+                    <span class="cd-label">Dig by Grace Konstantin</span>
+                </a>
+            </li>
+            <li>
+                <a href="#chin" data-number="3">
+                    <span class="cd-dot"></span>
+                    <span class="cd-label">Girlhood After Rilke by Sarah Chin</span>
+                </a>
+            </li>
+            <li>
+                <a href="#fleury" data-number="4">
+                    <span class="cd-dot"></span>
+                    <span class="cd-label">Papa by Carissa Fleury</span>
+                </a>
+            </li>
+            <li>
+                <a href="#pinsky" data-number="5">
+                    <span class="cd-dot"></span>
+                    <span class="cd-label">01.09.2014 by Emma Pinsky</span>
+                </a>
+            </li>
+            <li>
+                <a href="#sant" data-number="6">
+                    <span class="cd-dot"></span>
+                    <span class="cd-label">Fading by Jaanvi Sant</span>
+                </a>
+            </li>
+            <li>
+                <a href="#bonfiglio" data-number="7">
+                    <span class="cd-dot"></span>
+                    <span class="cd-label">Big Forks by Gabby Bonfiglio</span>
+                </a>
+            </li>
+            <li>
+                <a href="#kesslen" data-number="8">
+                    <span class="cd-dot"></span>
+                    <span class="cd-label">Eaton Hall by Ben Kesslen</span>
+                </a>
+            </li>
+            <li>
+                <a href="#chen" data-number="9">
+                    <span class="cd-dot"></span>
+                    <span class="cd-label">(hello) by Judy Chen</span>
+                </a>
+            </li>
+            <li>
+                <a href="#tess" data-number="10">
+                    <span class="cd-dot"></span>
+                    <span class="cd-label">Don't Tell by Tess Ross-Callahan</span>
+                </a>
+            </li>
+            <li>
+                <a href="#ward" data-number="11">
+                    <span class="cd-dot"></span>
+                    <span class="cd-label">Dilemma Birds by Conor Ward</span>
+                </a>
+            </li>
+            <li>
+                <a href="#hinchman" data-number="12">
+                    <span class="cd-dot"></span>
+                    <span class="cd-label">An Elegy for Johnny Behind the Bar by Tess Hinchman</span>
+                </a>
+            </li>
+            <li>
+                <a href="#allison" data-number="13">
+                    <span class="cd-dot"></span>
+                    <span class="cd-label">A Letter by Henry Allison</span>
+                </a>
+            </li>
+            <li>
+                <a href="#knox" data-number="14">
+                    <span class="cd-dot"></span>
+                    <span class="cd-label">Parts I & II by Liam Knox</span>
+                </a>
+            </li>
+            <li>
+                <a href="#pong" data-number="15">
+                    <span class="cd-dot"></span>
+                    <span class="cd-label">Breaking by Katharine Pong</span>
+                </a>
+            </li>
+            <li>
+                <a href="#leonard" data-number="16">
+                    <span class="cd-dot"></span>
+                    <span class="cd-label">Midweek by Liza Leonard</span>
+                </a>
+            </li>
+            <li>
+                <a href="#lombard" data-number="17">
+                    <span class="cd-dot"></span>
+                    <span class="cd-label">A Movie Theatre Ballad by Kevin Lombard</span>
+                </a>
+            </li>
+            <li>
+                <a href="#arora" data-number="18">
+                    <span class="cd-dot"></span>
+                    <span class="cd-label">Saffron by Aishvarya Arora</span>
+                </a>
+            </li>
+            <li>
+                <a href="#moore" data-number="19">
+                    <span class="cd-dot"></span>
+                    <span class="cd-label">Scooby Doo Enters the Diary by Jonathan Jacob Moore</span>
+                </a>
+            </li>
+            <li>
+                <a href="#kankam-nantwi" data-number="20">
+                    <span class="cd-dot"></span>
+                    <span class="cd-label">Roots by Yaa Kankam-Nantwi</span>
+                </a>
+            </li>
+            <li>
+                <a href="#gavin" data-number="21">
+                    <span class="cd-dot"></span>
+                    <span class="cd-label">Ice by Hailey Gavin</span>
+                </a>
+            </li>
+            <li>
+                <a href="#dorian" data-number="22">
+                    <span class="cd-dot"></span>
+                    <span class="cd-label">Clarity by Nick Dorian</span>
+                </a>
+            </li>
+        </ul>
+    </nav>
     <!--[if lt IE 8]>
             <p class="browserupgrade">You are using an <span>outdated</span> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
+
+    <section class="lit" id="cover">
+    <!--     <a class="share" target="_blank" href="
+        http://facebook.com/sharer/sharer.php?u=http://tuftsobserver.org/dig/">Share On Facebook</a> -->
+        <article>
+            <div class="title">
+                <h1>TUFTS OBSERVER</h1>
+                <br>
+                <h3>VOLUME CXX, ISSUE 5</h3>
+                <h3>APRIL 11, 2016</h3>
+                <h3>#THELITISSUE</h3>
+            </div>
+            <div class="body">
+               <!-- <a href="#konstantin"><h3>Dig</h3>by <i>Grace Konstantin</i></a> -->
+               <a href="#konstantin"><span>Dig</span><span>by Grace Konstantin</span></a>
+               <br>
+               <a href="#chin"><span>Girlhood After Rilke</span><span>by Sarah Chin</span></a>
+               <br>
+               <a href="#fleury"><span>Papa</span><span>by Carissa Fleury</span></a>
+               <br>
+               <a href="#pinsky"><span>01.09.2014</span><span>by Emma Pinsky</span></a>
+               <br>
+               <a href="#sant"><span>Fading</span><span>by Jaanvi Sant</span></a>
+               <br>
+               <a href="#bonfiglio"><span>Big Forks</span><span>by Gabby Bonfiglio</span></a>
+               <br>
+               <a href="#kesslen"><span>Eaton Hall</span><span>by Ben Kesslen</span></a>
+               <br>
+               <a href="#chen"><span>(hello)</span><span>by Judy Chen</span></a>
+               <br>
+               <a href="#tess"><span>Don't Tell</span><span>by Tess Ross-Callahan</span></a>
+               <br>
+               <a href="#ward"><span>Dilemma Birds</span><span>by Conor Ward</span></a>
+               <br>
+               <a href="#hinchman"><span>An Elegy for Johnny Behind the Bar</span><span>by Tess Hinchman</span></a>
+               <br>
+               <a href="#allison"><span>A Letter on the Anniversary</span><span>by Henry Allison</span></a>
+               <br>
+               <a href="#knox"><span>Parts I & II</span><span>by Liam Knox</span></a>
+               <br>
+               <a href="#pong"><span>Breaking</span><span>by Katharine Pong</span></a>
+               <br>
+               <a href="#leonard"><span>Midweek</span><span>by Liza Leonard</span></a>
+               <br>
+               <a href="#lombard"><span>A Movie Theatre Ballad</span><span>by Kevin Lombard</span></a>
+               <br>
+               <a href="#arora"><span>Saffron</span><span>by Aishvarya Arora</span></a>
+               <br>
+               <a href="#moore"><span>Scooby Doo Enters the Diary Room</span><span>by Jonathan Jacob Moore</span></a>
+               <br>
+               <a href="#kankam-nantwi"><span>Roots</span><span>by Yaa Kankam-Nantwi</span></a>
+               <br>
+               <a href="#gavin"><span>Ice</span><span>by Hailey Gavin</span></a>
+               <br>
+               <a href="#dorian"><span>Clarity</span><span>by Nick Dorian</span></a>
+            </div>
+        </article>
+    </section>
+
+
     <!-- DIG BY GRACE KONSTANTIN -->
     <section class="lit" id="konstantin">
+<!--     <a class="share" target="_blank" href="
+    http://facebook.com/sharer/sharer.php?u=http://tuftsobserver.org/dig/">Share On Facebook</a> -->
         <article>
             <div id="container2">
                 <div id="container1">
                     <div class="title">
-                        <h1>DIG</h1>
+                        <h1><a class="share" target="_blank" href="
+    http://facebook.com/sharer/sharer.php?u=http://tuftsobserver.org/dig/">DIG</a></h1>
                     </div>
                     <div class="body">
                         <h3>By Grace Konstantin</h3>
@@ -56,13 +277,15 @@
             </div>
         </article>
     </section>
-
     <!--  GIRLHOOD AFTER RILKE BY SARAH CHIN  -->
     <section class="lit" id="chin">
+<!--     <a class="share" target="_blank" href="
+    http://facebook.com/sharer/sharer.php?u=http://tuftsobserver.org/girlhood-after-rilke/">Share On Facebook</a> -->
         <article>
             <div class="copy">
                 <div class="title">
-                    <h1>Girlhood<br>After Rilke</h1>
+                    <h1><a class="share" target="_blank" href="
+    http://facebook.com/sharer/sharer.php?u=http://tuftsobserver.org/girlhood-after-rilke/">Girlhood<br>After Rilke</a></h1>
                     <h3>By Sarah Chin</h3>
                 </div>
 
@@ -83,13 +306,16 @@
         <img src="img/chin.jpg">
     </section>
 
-    <!--  PAPA BY CARISSA FLUERY  -->
-    <section class="lit" id="fluery">
-        <img src="img/fluery.jpg">
+    <!--  PAPA BY CARISSA fleury  -->
+    <section class="lit" id="fleury">
+<!-- <a class="share" target="_blank" href="
+    http://facebook.com/sharer/sharer.php?u=http://tuftsobserver.org/papa/">Share On Facebook</a> -->
+        <img src="img/fleury.jpg">
         <article>
             <div class="title">
-                <h1>PAPA</h1>
-                <h3>By Carissa Fluery</h3>
+                <h1><a class="share" target="_blank" href="
+    http://facebook.com/sharer/sharer.php?u=http://tuftsobserver.org/papa/">PAPA</a></h1>
+                <h3>By Carissa Fleury</h3>
             </div>
 
 
@@ -230,12 +456,15 @@
     </section>
 
 
-    <!-- 01.09. 2014 by EMMA PINKSY -->
-    <section class="lit" id="pinksy">
+    <!-- 01.09. 2014 by EMMA pinsky -->
+    <section class="lit" id="pinsky">
+<!--     <a class="share" target="_blank" href="
+    http://facebook.com/sharer/sharer.php?u=http://tuftsobserver.org/01-09-14/">Share On Facebook</a> -->
         <article>
             <div class="title">
-                <h1>01.09.2014</h1>
-                <h3>By Emma Pinksy</h3>
+                <h1><a class="share" target="_blank" href="
+    http://facebook.com/sharer/sharer.php?u=http://tuftsobserver.org/01-09-14/">01.09.2014</a></h1>
+                <h3>By Emma Pinsky</h3>
             </div>
 
             <div class="body">
@@ -286,16 +515,19 @@
 
             </div>
         </article>
-        <img src="img/pinksy.jpg">
+        <img src="img/pinsky.jpg">
     </section>
 
     <section class="lit" id="sant">
+<!--         <a class="share" target="_blank" href="
+    http://facebook.com/sharer/sharer.php?u=http://tuftsobserver.org/fading/">Share On Facebook</a> -->
         <img id="train" class="wow fadeInLeft" data-wow-duration="2s" data-wow-delay="1s" src="img/sant_train2.jpg">
         <div class="container">
             <img id="sil" class="wow fadeIn" data-wow-duration="3s" src="img/sant_sil.jpg">
             <article class="wow fadeIn" data-wow-duration="3s">
                 <div class="title">
-                    <h1>FADING</h1>
+                    <h1><a class="share" target="_blank" href="
+    http://facebook.com/sharer/sharer.php?u=http://tuftsobserver.org/fading/">FADING</a></h1>
                     <h3>By Jaanvi Sant</h3>
                 </div>
 
@@ -310,354 +542,1071 @@
     </section>
 
     <section class="lit" id="bonfiglio">
-            <article>
-                <div class="title">
-                    <h1>BIG FORKS</h1>
-                    <h3>By Gabby Bonfiglio</h3>
-                </div>
+<!--         <a class="share" target="_blank" href="
+    http://facebook.com/sharer/sharer.php?u=http://tuftsobserver.org/big-forks/">Share On Facebook</a> -->
+        <article>
+            <div class="title">
+                <h1><a class="share" target="_blank" href="
+    http://facebook.com/sharer/sharer.php?u=http://tuftsobserver.org/big-forks/">BIG FORKS</a></h1>
+                <h3>By Gabby Bonfiglio</h3>
+            </div>
 
-                <div class="body">
-                    <img id="butter" src="img/bonfiglio_butter.jpg">
-                    <p>
-                        Butter always comes first. Anyone who tells you otherwise is probably a phony.
-                    </p>
-                    <p>
-                        It is best at room temperature, but the baker knows that setting butter out the night before is a lofty goal reserved for Julia Childs, or others who have their shit together. I always microwave my butter for sixteen seconds, on high, so that is just softened for mixing. Once, I accidentally melted a whole stick so it bled all over the microwave, and it took me forever to scrub off the melted mess. My dad yelled at me the next day because the plate was still greasy and I hadn’t put it away, and I melted, too.
-                    </p>
+            <div class="body">
+                <img id="butter" src="img/bonfiglio_butter.jpg">
+                <p>
+                    Butter always comes first. Anyone who tells you otherwise is probably a phony.
+                </p>
+                <p>
+                    It is best at room temperature, but the baker knows that setting butter out the night before is a lofty goal reserved for Julia Childs, or others who have their shit together. I always microwave my butter for sixteen seconds, on high, so that is just softened for mixing. Once, I accidentally melted a whole stick so it bled all over the microwave, and it took me forever to scrub off the melted mess. My dad yelled at me the next day because the plate was still greasy and I hadn’t put it away, and I melted, too.
+                </p>
 
-                    <p>
-                        Today I unwrap the butter and it falls into the metal mixing bowl. Two sticks, thud, thud. Next is always sugar. Sugar must be mixed thoroughly with the butter, and so I measure it half cup by half cup but not too carefully, the grains heaping on one side and thinning on the other unevenly, an idea I am used to from looking in the mirror. 
-                    </p>
-                    <p>
-                        I grab a fork to mix with. My mom and three younger sisters like to say this is pointless because we have both a hand mixer and a standing mixer in our bright and spacious and well-stocked kitchen. But I always use a fork. I want to labor over the cookies, to put all my muscle into the motion of birthing a beautiful ball of dough.
-                    </p>
-                    <p>
-                        Today’s fork is a “big fork,”  in contrast with a “little fork.”  We have two sets because my dad does not like to eat with a utensil that is too light for his Italian grip.
-                    </p>
-                    <img id="bowl" src="img/bonfiglio_bowl.jpg">
-                    <p>
-                        I mix and mix, my arm bulging in its slow circles against the butter’s smooth resistance. I wonder if my bicep is too big and think that at least I’m putting it to use. Slowly the butter and sugar become an endearing, creamy mass, and I taste it, momentarily pretending the raw fat and sugar won’t settle.
-                    </p>
-                    <p>
-                        Eggs next. I crack three and scoop out a piece of shell because my dad might be eating these. More stirring, now, and then what I call in my head the “ little ingredients”—salt, vanilla extract, baking soda, baking powder, sometimes cinnamon because this kitchen is mine.
-                    </p>
-                    <p>
-                        I am pouring one teaspoon of vanilla extract—a husky ingredient important for its flavor—when my dad loudly pushes his chair out from the high marble counter and leaves the kitchen with a “ See you later, Gab.”  I have been giving him his space and he mine. Usually this is his house and he occupies wherever his thick stature pleases. But he knows this kitchen is my own today and whenever I choose to bake—to create something beautiful, to let inaccurately measured flour become my biggest worry, to reclaim. 
-                    </p>
-                    <p>
-                        “Love you,”  I reply as I add a teaspoon of salt and smile as the flakes fall and glisten on the mixture like the white flurry in our backyard. Salt brings out the sweetness and flavor of a baker’s masterpiece, and so I always add a little extra.
-                    </p>
-                    <p>
-                        It takes me until after the baking powder to realize that my dad has left his plate, and his cold cuts, and his cup, and his big fork. He did this yesterday, too, and I watched my mom clean it up, and the day before and the week before the same. Each of my three younger sisters has taken a turn.
-                    </p>
-                    <p>
-                        Now the sight stops my rhythmic mixing, and I confront this mess. It is in my kitchen and asking to be cleaned up, supposing I the daughter be the one to do it. So I do, slowly, and each utensil and bit of food feels heavier. I wipe away the crumbs on the dark countertop—imperfections.
-                    </p>
-                    <img id="dough" src="img/bonfiglio_dough.jpg">
-                    <p>
-                        Flour is next, the second to last ingredient. With these two cups comes a new and fierce blizzard, and I pick up my fork and begin to stir strongly. Around and around and around and despite my force some of the flour just isn’t mixing but forming streaks across dough. I drop my fork and it clangs.
-                    </p>
-                    <p>
-                        In go my hands. I thrust them into the dough and I’m almost up to my elbows in it and I love the feeling. I knead and knead and feel the dough between my fingers and keep going until I can breathe again. It is now a pale beige color somewhere between firewood and snow, and I think it is beautiful.
-                    </p>
+                <p>
+                    Today I unwrap the butter and it falls into the metal mixing bowl. Two sticks, thud, thud. Next is always sugar. Sugar must be mixed thoroughly with the butter, and so I measure it half cup by half cup but not too carefully, the grains heaping on one side and thinning on the other unevenly, an idea I am used to from looking in the mirror.
+                </p>
+                <p>
+                    I grab a fork to mix with. My mom and three younger sisters like to say this is pointless because we have both a hand mixer and a standing mixer in our bright and spacious and well-stocked kitchen. But I always use a fork. I want to labor over the cookies, to put all my muscle into the motion of birthing a beautiful ball of dough.
+                </p>
+                <p>
+                    Today’s fork is a “big fork,” in contrast with a “little fork.” We have two sets because my dad does not like to eat with a utensil that is too light for his Italian grip.
+                </p>
+                <img id="bowl" src="img/bonfiglio_bowl.jpg">
+                <p>
+                    I mix and mix, my arm bulging in its slow circles against the butter’s smooth resistance. I wonder if my bicep is too big and think that at least I’m putting it to use. Slowly the butter and sugar become an endearing, creamy mass, and I taste it, momentarily pretending the raw fat and sugar won’t settle.
+                </p>
+                <p>
+                    Eggs next. I crack three and scoop out a piece of shell because my dad might be eating these. More stirring, now, and then what I call in my head the “ little ingredients”—salt, vanilla extract, baking soda, baking powder, sometimes cinnamon because this kitchen is mine.
+                </p>
+                <p>
+                    I am pouring one teaspoon of vanilla extract—a husky ingredient important for its flavor—when my dad loudly pushes his chair out from the high marble counter and leaves the kitchen with a “ See you later, Gab.” I have been giving him his space and he mine. Usually this is his house and he occupies wherever his thick stature pleases. But he knows this kitchen is my own today and whenever I choose to bake—to create something beautiful, to let inaccurately measured flour become my biggest worry, to reclaim.
+                </p>
+                <p>
+                    “Love you,” I reply as I add a teaspoon of salt and smile as the flakes fall and glisten on the mixture like the white flurry in our backyard. Salt brings out the sweetness and flavor of a baker’s masterpiece, and so I always add a little extra.
+                </p>
+                <p>
+                    It takes me until after the baking powder to realize that my dad has left his plate, and his cold cuts, and his cup, and his big fork. He did this yesterday, too, and I watched my mom clean it up, and the day before and the week before the same. Each of my three younger sisters has taken a turn.
+                </p>
+                <p>
+                    Now the sight stops my rhythmic mixing, and I confront this mess. It is in my kitchen and asking to be cleaned up, supposing I the daughter be the one to do it. So I do, slowly, and each utensil and bit of food feels heavier. I wipe away the crumbs on the dark countertop—imperfections.
+                </p>
+                <img id="dough" src="img/bonfiglio_dough.jpg">
+                <p>
+                    Flour is next, the second to last ingredient. With these two cups comes a new and fierce blizzard, and I pick up my fork and begin to stir strongly. Around and around and around and despite my force some of the flour just isn’t mixing but forming streaks across dough. I drop my fork and it clangs.
+                </p>
+                <p>
+                    In go my hands. I thrust them into the dough and I’m almost up to my elbows in it and I love the feeling. I knead and knead and feel the dough between my fingers and keep going until I can breathe again. It is now a pale beige color somewhere between firewood and snow, and I think it is beautiful.
+                </p>
 
-                    <p>
-                        True bakers know never to overmix, not to worry about the little lumps and bumps left in our batter or dough. Overmixing and overanalyzing leads to a tough and tired and bitter product. I continue to breathe.
-                    </p>
-                    <p>
-                        Chocolate chips are last. I learned recently that a woman invented chocolate chip cookies, and I’m not sure why that surprised me.
-                    </p>
-                    <p>
-                        I tip the bag and let the chips pour, rushing into the bowl. My dad likes to tell me that I don’t use enough chocolate chips, on the odd chance that he eats my masterpiece. I pour more. 
-                    </p>
-                    <p>
-                        Dough is stuck between my pinky and ring finger, and under my nails, and around the ponytail holder on my wrist I forgot to take off, and I continue mixing with my hands, relishing the mess that is mine.
+                <p>
+                    True bakers know never to overmix, not to worry about the little lumps and bumps left in our batter or dough. Overmixing and overanalyzing leads to a tough and tired and bitter product. I continue to breathe.
+                </p>
+                <p>
+                    Chocolate chips are last. I learned recently that a woman invented chocolate chip cookies, and I’m not sure why that surprised me.
+                </p>
+                <p>
+                    I tip the bag and let the chips pour, rushing into the bowl. My dad likes to tell me that I don’t use enough chocolate chips, on the odd chance that he eats my masterpiece. I pour more.
+                </p>
+                <p>
+                    Dough is stuck between my pinky and ring finger, and under my nails, and around the ponytail holder on my wrist I forgot to take off, and I continue mixing with my hands, relishing the mess that is mine.
 
-                    </p>
+                </p>
+                <p>
+                    “Teaspoon-sized” is what all the recipes say dough balls should be, but in my kitchen there is no ideal. I shape a diversity of dough and plop them in disarray on my tray, plop, plop, popping a bite into my mouth with every other ball I shape. My mom and sisters like to tell me I eat too much when I bake, and today their voices echo in my empty kitchen.
+                </p>
+                <p>
+                    I eat one more bite of the gooey, smooth, sweet dough and smile spitefully. My dad strolls back into the kitchen.
                     <p>
-                        “Teaspoon-sized”  is what all the recipes say dough balls should be, but in my kitchen there is no ideal. I shape a diversity of dough and plop them in disarray on my tray, plop, plop, popping a bite into my mouth with every other ball I shape. My mom and sisters like to tell me I eat too much when I bake, and today their voices echo in my empty kitchen.
-                    </p>
-                    <p>
-                        I eat one more bite of the gooey, smooth, sweet dough and smile spitefully. My dad strolls back into the kitchen. 
-                    <p>
-                        “Dad, you forgot to clean your plate again.”  The words escape before I’ve swallowed, and I almost choke. I wait for a reply and try to stand taller, but I’m shaking.
+                        “Dad, you forgot to clean your plate again.” The words escape before I’ve swallowed, and I almost choke. I wait for a reply and try to stand taller, but I’m shaking.
                     </p>
                     <p>
                         He looks at me for a second, frozen, with a streak of flour on my forehead and cookie dough on my hands and in my mouth—his striving daughter. His expression stumbles its way from indignant to understanding. “Oh, I’m sorry.”
-                    <p>
-                        I nod. Today, that’s all I need
-                    </p>
-                    <img id="fork" src="img/bonfiglio_fork.jpg">
-                </div>
-            </article>
-        </section>
+                        <p>
+                            I nod. Today, that’s all I need
+                        </p>
+                        <img id="fork" src="img/bonfiglio_fork.jpg">
+            </div>
+        </article>
+    </section>
 
     <section class="lit" id="kesslen">
+<!--         <a class="share" target="_blank" href="
+    http://facebook.com/sharer/sharer.php?u=http://tuftsobserver.org/eaton-hall/">Share On Facebook</a> -->
         <article>
             <div class="title">
-                <h1>EATON HALL</h1>
+                <h1><a class="share" target="_blank" href="
+    http://facebook.com/sharer/sharer.php?u=http://tuftsobserver.org/eaton-hall/">EATON HALL</a></h1>
                 <h3>By Ben Kesslen</h3>
             </div>
 
             <div class="body">
-            <p>
-                <span>On the third floor</span> I told my professor that my essay was going to be late because I didn’t feel like I could do anything that week.
-            </p> 
-            
-            <p>
-                <span>On the second floor</span> I went on a date with a boy who brought me a mocha in a mason jar and listened to me when we talked and kissed me on my lips on our walk home—and then a couple weeks later decided he didn’t like me anymore but never had the courage to tell me to my face so instead I heard it from my friend who I often do homework with in the computer lab that is 50 feet away from the room where he and I laughed together. 
-            </p>
-            <p>
-                <span>On the first floor</span> I read a story about my queerness to my freshman writing seminar in a way I never thought I would be able to, and I fled to the bathroom one time when I almost ran into a person who I wished would leave this school—or at least go abroad for a year—and I sat on the toilet with my pants on and thought about how the basement floor bathroom is the nicest part of the building and how the tiles surrounding me were the ones they often use in the HGTV renovation shows that I would watch alone on Saturday nights in high school. 
-            </p>
-            <p>
-                <span>On the second floor</span> I ate pizza and Chinese food and Hot Cheetos late into the night with my friends as we used homework as our excuse to spend time together that we didn’t get during the day, and I cried to my mom on facetime audio because the sound quality is better and I missed her voice, and I wrote an essay about a book I didn’t read. 
-            </p>
-            <p>
-                <span>On the third floor</span> I tripped and spilled the free drink I got from The Rez—it had two shots of espresso because I didn’t really sleep the night before and I’m not really sure why. 
-            </p>
-            <p>
-                <span>On the second floor</span> I stared at my reflection in the computer monitor as the boy I liked did coke in the seat next to me so he could finish a paper, and I sat in the lab late into the night on a Thursday not doing my work, just looking up at the high ceiling, giving myself space to breathe after a week that had felt like eternity, when everything seemed like it was too much to handle and I wanted to run away but I couldn’t so instead I just took refuge in the place with the high ceilings and the large windows and the Macs that don’t work well and the printers that take forever to produce a two page, double-sided reading response and the security guard whose name I forget but always smiles at me.
-            </p> 
-             
-            <p>
-                <span>On the first floor</span> I ate a free lunch for American Studies majors. There was a lot of guacamole and I sat there for 90 minutes until I was so full I couldn’t move. And I took a selfie in the mirror of that bathroom that seems too nice for the rest of the building that made me feel good about myself in a way I hadn’t in a while. 
-            </p>
-            <p>
-                <span>On the third floor</span> I dropped a class, and I changed my home on GrubHub to “Eaton Hall, 5 The Green, Medford, MA 02155.” Only the drivers from Golden Light can find it but I always try anyways because I don’t want to walk all the way to the Campus Center when I order food.
-            </p>  
-            <p>
-                <span>In the staircase</span> I heard a straight boy say the word “faggot” but stayed silent because I was wearing leggings that day.  
-            </p>
-            <p>
-                <span>On the first floor</span> someone told me that over the summer they want to renovate Eaton and make it look like 574 Boston Ave, turn it into some STEM circle-jerk like they are doing to the rest of this school. 
-            </p>
-            <p>
-                <span>On the second floor</span> I wrote this as I was the only one left in the computer lab. On the way out the security guard smiled at me.
-            </p> 
+                <p>
+                    <span>On the third floor</span> I told my professor that my essay was going to be late because I didn’t feel like I could do anything that week.
+                </p>
+
+                <p>
+                    <span>On the second floor</span> I went on a date with a boy who brought me a mocha in a mason jar and listened to me when we talked and kissed me on my lips on our walk home—and then a couple weeks later decided he didn’t like me anymore but never had the courage to tell me to my face so instead I heard it from my friend who I often do homework with in the computer lab that is 50 feet away from the room where he and I laughed together.
+                </p>
+                <p>
+                    <span>On the first floor</span> I read a story about my queerness to my freshman writing seminar in a way I never thought I would be able to, and I fled to the bathroom one time when I almost ran into a person who I wished would leave this school—or at least go abroad for a year—and I sat on the toilet with my pants on and thought about how the basement floor bathroom is the nicest part of the building and how the tiles surrounding me were the ones they often use in the HGTV renovation shows that I would watch alone on Saturday nights in high school.
+                </p>
+                <p>
+                    <span>On the second floor</span> I ate pizza and Chinese food and Hot Cheetos late into the night with my friends as we used homework as our excuse to spend time together that we didn’t get during the day, and I cried to my mom on facetime audio because the sound quality is better and I missed her voice, and I wrote an essay about a book I didn’t read.
+                </p>
+                <p>
+                    <span>On the third floor</span> I tripped and spilled the free drink I got from The Rez—it had two shots of espresso because I didn’t really sleep the night before and I’m not really sure why.
+                </p>
+                <p>
+                    <span>On the second floor</span> I stared at my reflection in the computer monitor as the boy I liked did coke in the seat next to me so he could finish a paper, and I sat in the lab late into the night on a Thursday not doing my work, just looking up at the high ceiling, giving myself space to breathe after a week that had felt like eternity, when everything seemed like it was too much to handle and I wanted to run away but I couldn’t so instead I just took refuge in the place with the high ceilings and the large windows and the Macs that don’t work well and the printers that take forever to produce a two page, double-sided reading response and the security guard whose name I forget but always smiles at me.
+                </p>
+
+                <p>
+                    <span>On the first floor</span> I ate a free lunch for American Studies majors. There was a lot of guacamole and I sat there for 90 minutes until I was so full I couldn’t move. And I took a selfie in the mirror of that bathroom that seems too nice for the rest of the building that made me feel good about myself in a way I hadn’t in a while.
+                </p>
+                <p>
+                    <span>On the third floor</span> I dropped a class, and I changed my home on GrubHub to “Eaton Hall, 5 The Green, Medford, MA 02155.” Only the drivers from Golden Light can find it but I always try anyways because I don’t want to walk all the way to the Campus Center when I order food.
+                </p>
+                <p>
+                    <span>In the staircase</span> I heard a straight boy say the word “faggot” but stayed silent because I was wearing leggings that day.
+                </p>
+                <p>
+                    <span>On the first floor</span> someone told me that over the summer they want to renovate Eaton and make it look like 574 Boston Ave, turn it into some STEM circle-jerk like they are doing to the rest of this school.
+                </p>
+                <p>
+                    <span>On the second floor</span> I wrote this as I was the only one left in the computer lab. On the way out the security guard smiled at me.
+                </p>
             </div>
             <div class="title">
             </div>
         </article>
     </section>
 
-     <section class="lit" id="chen">
+    <section class="lit" id="chen">
+<!--         <a class="share" target="_blank" href="
+    http://facebook.com/sharer/sharer.php?u=http://tuftsobserver.org/hello/">Share On Facebook</a> -->
         <article>
             <div class="title">
-                <h1>(HELLO)</h1>
+                <h1><a class="share" target="_blank" href="
+    http://facebook.com/sharer/sharer.php?u=http://tuftsobserver.org/hello/">(HELLO)</a></h1>
                 <h3>By Judy Chen</h3>
             </div>
             <div class="body">
-            <p class="left">
-                Inside,<br>
-            </p>
-            <p class="middle">
-                the fearful seed of love<br>
-            </p>
-            <p class="right">
-                sprouts
-            </p> 
-            <br>
-            <p class="left">
-                underneath<br>
-            </p>
-            <p class="middle">
-                The side walk, beneath<br>
-            </p>
-            <p class="right">
-                the train tracks
-            </p> 
-            <br>
-            <p class="left">
-                greeting<br>
-            </p>
-            <p class="middle">
-                the new world embraced<br>
-            </p>
-            <p class="right">
-                in light
-            </p> 
-            <br>
-            <p class="left">
-                In light,<br>
-            </p>
-            <p class="middle">
-                we stand, freshly born<br>
-            </p>
-            <p class="right">
-                and afraid
-            </p> 
-            <br>
+                <p class="left">
+                    Inside,
+                    <br>
+                </p>
+                <p class="middle">
+                    the fearful seed of love
+                    <br>
+                </p>
+                <p class="right">
+                    sprouts
+                </p>
+                <br>
+                <p class="left">
+                    underneath
+                    <br>
+                </p>
+                <p class="middle">
+                    The side walk, beneath
+                    <br>
+                </p>
+                <p class="right">
+                    the train tracks
+                </p>
+                <br>
+                <p class="left">
+                    greeting
+                    <br>
+                </p>
+                <p class="middle">
+                    the new world embraced
+                    <br>
+                </p>
+                <p class="right">
+                    in light
+                </p>
+                <br>
+                <p class="left">
+                    In light,
+                    <br>
+                </p>
+                <p class="middle">
+                    we stand, freshly born
+                    <br>
+                </p>
+                <p class="right">
+                    and afraid
+                </p>
+                <br>
             </div>
         </article>
     </section>
 
     <section class="lit" id="tess">
+<!--         <a class="share" target="_blank" href="
+    http://facebook.com/sharer/sharer.php?u=http://tuftsobserver.org/dont-tell/">Share On Facebook</a> -->
         <article>
             <div class="title">
-                <h1>DON'T TELL</h1>
+                <h1><a class="share" target="_blank" href="
+    http://facebook.com/sharer/sharer.php?u=http://tuftsobserver.org/dont-tell/">DON'T TELL</a></h1>
                 <h3>By Tess Ross-Callahan</h3>
             </div>
             <div class="body">
-            <p>
-                I never told anyone that the first night my son came home with a boy, I didn’t speak to him for three weeks.
-            </p> 
-            <p>
-                The second time, I threw him out of the house. 
-                You have to understand, I wasn’t raised to talk about things. Talking, talk talk talk, it’s all over the news now as the trademark of good parenting: talk about it. <i>Talk to your son about his behavior. Have you talked to your son lately? Honey, someone’s got to talk to that boy. </i>
-            </p>
-            <p>
-                Talk.
-            </p>
-            <p> 
-                The way I was raised, the surefire way to make a bad situation worse was to talk about it. Even asking my dad about his day could get you a licking. Whenever my mama insisted we eat dinner together, my dad would read <i>The Montgomery Advertiser</i> out loud between bites. Sometimes we’d discuss Kenny’s football game, but mostly we just listened to Daddy read about what ass-backwards decisions the liberals had just made in Congress. I never told anybody about my boyfriend Fred until he proposed. Even then, the only question my dad asked was how much Fred made, not all those questions you see on TV nowadays about what’s he like or does he treat you right and all that. 
-            </p>
-            <p>
-                So I sure didn’t tell Fred when our son started talking about Prince Erik instead of Princess Ariel. I was never real sure about God, but Fred went to church every Sunday, and I didn’t want any trouble. So I tried, I really did. I gave Kyle all those books about God making the sunrise and I told him about the right way to fall in love and he was better at first, I swear. He even stopped drawing Prince Erik in art class. And I thought there was nothing else to worry about, that we’d sidestepped the crisis and that my boy was on the right track. 
-            </p>
-            <p>
-                And then, fifteen years old, he came home with Richie Baker from algebra. No problem, I always feed my boy’s friends from school, I just buy beans instead of meat the next week. Fred might’ve complained, but Kyle had been so quiet, so isolated. I was glad to see him with a friend.  
-            </p>
-            <p>
-                But when I went up to ask the boys to set the table for supper, they weren’t doing algebra at all. No, their backpacks were lying untouched on the rug like fat, dead birds, and they were lying on the bed together. I hadn’t seen so much of my boy since I’d been teaching him to wash his privates. And there they were, under my roof! Right under my nose!
-            </p>
-            <p> 
-                They saw me and sprang apart like the little boys they were, and Kyle scrambled for the blankets. “Ma - ” 
-            </p>
-            <p>
-                But I had nothing to hear from him. I told Richie he’d best leave this very minute, and I went downstairs and thought about burning the sausage, just so something would suffer for this sin. But in the end, I didn’t burn anything. I made that meal the best I’d ever made it, throwing my heart into my work, and it was so good that Fred commented on it when he got home. Kyle, though, didn’t eat a thing. He sat with his chin dipping towards his chest, his cheeks Alabama crimson. 
-            </p>
-            <p>
-                And I didn’t say a word to him the whole meal. 
-            </p>
-            <p>
-                From there, I just didn’t know how to stop. Kyle would come home from school and hover in corners, twisting his shirt between his fingers like he’d done as a little boy, and he’d say, “Ma, I think we ought to talk about this,” and “Ma, why aren’t you answering me?” But I never learned how to talk. So it stayed that way until he said, “Ma, are you going to tell Dad?” 
-            </p>
-            <p>
-                “Tell him what?” It just came out.  
-            </p>
-            <p>
-                Kyle dropped his head and pulled at the loose thread in his sweatshirt until it ripped. His mouth looked like it wanted to smile, but his eyes looked like the dark holes in the soil after I’d dug up my pansies — too empty to even be a grave. He walked out of my kitchen without a word, and just like that, we were on speaking terms again. I thought that was the end of it, but these things send out deep roots. Cutting off the head only slows them down.
-            </p> 
-            <p>
-                When he came home for the first time from UC Berkeley, his father was out. When I opened the door, he was standing on the doorstep with another boy gripping his hand. Kyle’s face was not my son’s face. Older, without the small pouches of baby fat weighing down his cheeks, but it was more than that. The hem of his shirt wasn’t wrinkled or full of holes, and he held himself upright without needing to be reminded.  
-            </p>
-            <p>
-                But I barely noticed these changes at the time, because I was looking their twisted-up hands hanging between them, and all I could think about was Faerie Daryl from my neighborhood, and what had happened to him, and how the blood stained the concrete for four whole months before the mayor finally ordered it painted over.  
-            </p>
-            <p>
-                I didn’t close the door. I meant to, but I was stuck, staring, and now Kyle’s face looked the way it did when he was confronting the ref about a particularly bad call: scared and angry and determined, all at once. He wouldn’t leave, even when I told him to, and he kept trying to talk to me - talk talk talk - and finally I couldn’t stand it anymore, that word talk burning and pricking me like a bad fever, so I said it. 
-            </p>
-            <p>
-                “You aren’t welcome here until you beat this sickness back for good.” 
-            </p>
-            <p>
-                And something in my boy’s face closed, somehow. He turned pale and bitter as gin, and he turned, still with that goddamn stranger clutching his hand, and they got in his truck and drove away.  
-            </p>
-            <p>
-                When I got the phone call after the Stonewall Riots, I didn’t cry. I made a sausage dinner. I made it perfect, absolutely perfect, and it was only much later that I found myself choking on my dinner and spitting it into the sink. 
-            </p>
-            <p>  
-                “What’s wrong, Elsie?” 
-            </p>
-            <p>
-                I almost told him, but how do you tell your husband that his son was in the gay riots in California when your husband thinks his son is still in Alabama, maybe with a nice girl? How do you tell him that his son is paralyzed in a hospital and probably has a boy sitting at his bedside? 
-            </p>
-            <p>
-                “I think I burned the sausage,” I told him, and put my napkin back in my lap. 
-            </p>
-            <p>
-                Talking. I never did learn how to do it.   
-            </p>
+                <p>
+                    I never told anyone that the first night my son came home with a boy, I didn’t speak to him for three weeks.
+                </p>
+                <p>
+                    The second time, I threw him out of the house. You have to understand, I wasn’t raised to talk about things. Talking, talk talk talk, it’s all over the news now as the trademark of good parenting: talk about it. <i>Talk to your son about his behavior. Have you talked to your son lately? Honey, someone’s got to talk to that boy. </i>
+                </p>
+                <p>
+                    Talk.
+                </p>
+                <p>
+                    The way I was raised, the surefire way to make a bad situation worse was to talk about it. Even asking my dad about his day could get you a licking. Whenever my mama insisted we eat dinner together, my dad would read <i>The Montgomery Advertiser</i> out loud between bites. Sometimes we’d discuss Kenny’s football game, but mostly we just listened to Daddy read about what ass-backwards decisions the liberals had just made in Congress. I never told anybody about my boyfriend Fred until he proposed. Even then, the only question my dad asked was how much Fred made, not all those questions you see on TV nowadays about what’s he like or does he treat you right and all that.
+                </p>
+                <p>
+                    So I sure didn’t tell Fred when our son started talking about Prince Erik instead of Princess Ariel. I was never real sure about God, but Fred went to church every Sunday, and I didn’t want any trouble. So I tried, I really did. I gave Kyle all those books about God making the sunrise and I told him about the right way to fall in love and he was better at first, I swear. He even stopped drawing Prince Erik in art class. And I thought there was nothing else to worry about, that we’d sidestepped the crisis and that my boy was on the right track.
+                </p>
+                <p>
+                    And then, fifteen years old, he came home with Richie Baker from algebra. No problem, I always feed my boy’s friends from school, I just buy beans instead of meat the next week. Fred might’ve complained, but Kyle had been so quiet, so isolated. I was glad to see him with a friend.
+                </p>
+                <p>
+                    But when I went up to ask the boys to set the table for supper, they weren’t doing algebra at all. No, their backpacks were lying untouched on the rug like fat, dead birds, and they were lying on the bed together. I hadn’t seen so much of my boy since I’d been teaching him to wash his privates. And there they were, under my roof! Right under my nose!
+                </p>
+                <p>
+                    They saw me and sprang apart like the little boys they were, and Kyle scrambled for the blankets. “Ma - ”
+                </p>
+                <p>
+                    But I had nothing to hear from him. I told Richie he’d best leave this very minute, and I went downstairs and thought about burning the sausage, just so something would suffer for this sin. But in the end, I didn’t burn anything. I made that meal the best I’d ever made it, throwing my heart into my work, and it was so good that Fred commented on it when he got home. Kyle, though, didn’t eat a thing. He sat with his chin dipping towards his chest, his cheeks Alabama crimson.
+                </p>
+                <p>
+                    And I didn’t say a word to him the whole meal.
+                </p>
+                <p>
+                    From there, I just didn’t know how to stop. Kyle would come home from school and hover in corners, twisting his shirt between his fingers like he’d done as a little boy, and he’d say, “Ma, I think we ought to talk about this,” and “Ma, why aren’t you answering me?” But I never learned how to talk. So it stayed that way until he said, “Ma, are you going to tell Dad?”
+                </p>
+                <p>
+                    “Tell him what?” It just came out.
+                </p>
+                <p>
+                    Kyle dropped his head and pulled at the loose thread in his sweatshirt until it ripped. His mouth looked like it wanted to smile, but his eyes looked like the dark holes in the soil after I’d dug up my pansies — too empty to even be a grave. He walked out of my kitchen without a word, and just like that, we were on speaking terms again. I thought that was the end of it, but these things send out deep roots. Cutting off the head only slows them down.
+                </p>
+                <p>
+                    When he came home for the first time from UC Berkeley, his father was out. When I opened the door, he was standing on the doorstep with another boy gripping his hand. Kyle’s face was not my son’s face. Older, without the small pouches of baby fat weighing down his cheeks, but it was more than that. The hem of his shirt wasn’t wrinkled or full of holes, and he held himself upright without needing to be reminded.
+                </p>
+                <p>
+                    But I barely noticed these changes at the time, because I was looking their twisted-up hands hanging between them, and all I could think about was Faerie Daryl from my neighborhood, and what had happened to him, and how the blood stained the concrete for four whole months before the mayor finally ordered it painted over.
+                </p>
+                <p>
+                    I didn’t close the door. I meant to, but I was stuck, staring, and now Kyle’s face looked the way it did when he was confronting the ref about a particularly bad call: scared and angry and determined, all at once. He wouldn’t leave, even when I told him to, and he kept trying to talk to me - talk talk talk - and finally I couldn’t stand it anymore, that word talk burning and pricking me like a bad fever, so I said it.
+                </p>
+                <p>
+                    “You aren’t welcome here until you beat this sickness back for good.”
+                </p>
+                <p>
+                    And something in my boy’s face closed, somehow. He turned pale and bitter as gin, and he turned, still with that goddamn stranger clutching his hand, and they got in his truck and drove away.
+                </p>
+                <p>
+                    When I got the phone call after the Stonewall Riots, I didn’t cry. I made a sausage dinner. I made it perfect, absolutely perfect, and it was only much later that I found myself choking on my dinner and spitting it into the sink.
+                </p>
+                <p>
+                    “What’s wrong, Elsie?”
+                </p>
+                <p>
+                    I almost told him, but how do you tell your husband that his son was in the gay riots in California when your husband thinks his son is still in Alabama, maybe with a nice girl? How do you tell him that his son is paralyzed in a hospital and probably has a boy sitting at his bedside?
+                </p>
+                <p>
+                    “I think I burned the sausage,” I told him, and put my napkin back in my lap.
+                </p>
+                <p>
+                    Talking. I never did learn how to do it.
+                </p>
             </div>
         </article>
     </section>
 
 
     <section class="lit" id="ward">
+<!--         <a class="share" target="_blank" href="
+    http://facebook.com/sharer/sharer.php?u=http://tuftsobserver.org/multimedia/lit2016/#ward">Share On Facebook</a> -->
         <div class="banner"></div>
         <article>
             <div class="title">
-                <h1>DILEMMA BIRDS</h1>
+                <h1><a class="share" target="_blank" href="
+    http://facebook.com/sharer/sharer.php?u=http://tuftsobserver.org/multimedia/lit2016/#ward">DILEMMA BIRDS</a></h1>
                 <h3>Installation by Conor Ward</h3>
             </div>
             <div class="body">
-            <p>
-                Due to its salience as a symbol for San Francisco, the Victorian house is an obvious choice for an emblem to represent SF housing. Due to its opulent, vibrant, and colorful exterior, the Victorian house is also a potent symbol for distraction. The ornate Victorian facade is a perfect metaphor for the way in which the superficial San Francisco landscape camouflages the heart-wrenching realities of foreclosure and eviction playing out every day in the city. All of SF’s primary attractions (including the tech boom, the Golden Gate Bridge, the myriad lush parks, the incredible vantages, and the pleasant drought weather), along with the beautiful Victorian housing scattered throughout the city, make up a gleaming yet thin veneer that prevents many from seeing what’s really going on.
-            </p>
-            <p>
-                Whenever a neighborhood is gentrified or “cleaned up,” underprivileged people like the homeless are mercilessly and inhumanely mistreated and dehumanized. They are unfairly discriminated against because of aspects of their identity and appearance beyond their control, such as their personal hygiene. They are seen as an unsightly infestation, much like pigeons.
-            </p>
-            <p>
-                A large reason why I chose to base my artwork on the current SF gentrification crisis was because I felt an overwhelming obligation to educate myself about SF’s past and current histories relevant to the issue.
-            </p>
-            <img src="img/ward3.jpg">
-            <img src="img/ward4.jpg">
-            <img src="img/ward2.jpg">
+                <p>
+                    Due to its salience as a symbol for San Francisco, the Victorian house is an obvious choice for an emblem to represent SF housing. Due to its opulent, vibrant, and colorful exterior, the Victorian house is also a potent symbol for distraction. The ornate Victorian facade is a perfect metaphor for the way in which the superficial San Francisco landscape camouflages the heart-wrenching realities of foreclosure and eviction playing out every day in the city. All of SF’s primary attractions (including the tech boom, the Golden Gate Bridge, the myriad lush parks, the incredible vantages, and the pleasant drought weather), along with the beautiful Victorian housing scattered throughout the city, make up a gleaming yet thin veneer that prevents many from seeing what’s really going on.
+                </p>
+                <p>
+                    Whenever a neighborhood is gentrified or “cleaned up,” underprivileged people like the homeless are mercilessly and inhumanely mistreated and dehumanized. They are unfairly discriminated against because of aspects of their identity and appearance beyond their control, such as their personal hygiene. They are seen as an unsightly infestation, much like pigeons.
+                </p>
+                <p>
+                    A large reason why I chose to base my artwork on the current SF gentrification crisis was because I felt an overwhelming obligation to educate myself about SF’s past and current histories relevant to the issue.
+                </p>
+                <img src="img/ward3.jpg">
+                <img src="img/ward4.jpg">
+                <img src="img/ward2.jpg">
             </div>
         </article>
         <div class="banner"></div>
     </section>
 
-   <section class="lit" id="hinchman">
+    <section class="lit" id="hinchman">
+<!--         <a class="share" target="_blank" href="
+    http://facebook.com/sharer/sharer.php?u=http://tuftsobserver.org/elegy-for-johnny-behind-the-bar/">Share On Facebook</a> -->
         <article>
             <div class="title">
-                <h1>ELEGY FOR JOHNNY BEHIND THE BAR<br><span>By Tess Hinchman</span></h1>
+                <h1><a class="share" target="_blank" href="
+    http://facebook.com/sharer/sharer.php?u=http://tuftsobserver.org/elegy-for-johnny-behind-the-bar/">ELEGY FOR JOHNNY BEHIND THE BAR</a><br><span>By Tess Hinchman</span></h1>
                 <!-- <h3>By Tess Hinchman</h3> -->
             </div>
             <div class="body">
                 <p>
-                    4:15. You polish sunlight<br>
-                    through the bottom of a glass<br>
-                    while I fold napkins<br>
-                    and tell me about the mountains<br>
-                    scrapping across Telluride blue,<br>
-                    the girls you dated in college,<br>
-                    that dream you had last night. <br>
+                    4:15. You polish sunlight
+                    <br> through the bottom of a glass
+                    <br> while I fold napkins
+                    <br> and tell me about the mountains
+                    <br> scrapping across Telluride blue,
+                    <br> the girls you dated in college,
+                    <br> that dream you had last night.
+                    <br>
                 </p>
                 <p>
-                    The usuals come in before rush,<br>
-                    mudflats and seventy Julys <br>
-                    caked beneath their nails. <br>
-                    The sauvignon-blanc ladies get your dimples,<br>
-                                    <img src="img/hinchman2.jpg">
-                    but Jean and Mike get the brine-soaked grin.<br>
-                    I float, buoyed by the salt of belonging.<br>
+                    The usuals come in before rush,
+                    <br> mudflats and seventy Julys
+                    <br> caked beneath their nails.
+                    <br> The sauvignon-blanc ladies get your dimples,
+                    <br>
+                    <img src="img/hinchman2.jpg"> but Jean and Mike get the brine-soaked grin.
+                    <br> I float, buoyed by the salt of belonging.
+                    <br>
                 </p>
                 <p>
-                    Scared, sixteen. On the first day <br>
-                    you took the seat next to mine. <br>
-                    Can’t let you monopolize all that space.<br>
-                    During the worst shifts, you gave me<br>
-                    maraschino cherries. Cancer<br>
-                    Pills, you called them.<br>
+                    Scared, sixteen. On the first day
+                    <br> you took the seat next to mine.
+                    <br> Can’t let you monopolize all that space.
+                    <br> During the worst shifts, you gave me
+                    <br> maraschino cherries. Cancer
+                    <br> Pills, you called them.
+                    <br>
                 </p>
                 <p>
-                    You told us not to plaster <br>
-                    this page with sappy quotes<br>
-                    under pictures of sunsets and birds.<br>
-                    I read them all anyways,<br>
-                    looking for one that means<br>
-                    dancing around a mop <br>
-                    at close, singing Sam Cooke.<br>
+                    You told us not to plaster
+                    <br> this page with sappy quotes
+                    <br> under pictures of sunsets and birds.
+                    <br> I read them all anyways,
+                    <br> looking for one that means
+                    <br> dancing around a mop
+                    <br> at close, singing Sam Cooke.
+                    <br>
                 </p>
                 <p>
-                    Now, when I pour<br>
-                    Jean’s usual, your voice <br>
-                    counts in my head.<br>
-                    1 Mississippi 2 Mississippi<br>
-                    3 Mississippi. 4<br>
+                    Now, when I pour
+                    <br> Jean’s usual, your voice
+                    <br> counts in my head.
+                    <br> 1 Mississippi 2 Mississippi
+                    <br> 3 Mississippi. 4
+                    <br>
                     <br>
                     <br>
                     <br>
                 </p>
             </div>
         </article>
+    </section>
+
+    <section class="lit" id="allison">
+<!--         <a class="share" target="_blank" href="
+    http://facebook.com/sharer/sharer.php?u=http://tuftsobserver.org/a-letter-on-the-anniversary-of-the-death-of-arcangelo-gabriele/">Share On Facebook</a> -->
+        <article>
+            <div class="title">
+                <h1><a class="share" target="_blank" href="
+    http://facebook.com/sharer/sharer.php?u=http://tuftsobserver.org/a-letter-on-the-anniversary-of-the-death-of-arcangelo-gabriele/">A LETTER ON THE ANNIVERSARY OF THE DEATH OF ARCANGELO GABRIELE</a></h1>
+                <h3>By Henry Allison</h3>
+            </div>
+            <div class="body">
+                <p>
+                    standing in a small coat a slightly larger boy
+                    <br>it must have been in Italian that they told him his name
+                    <br>was Frank Gabriel now that Arcangelo Gabriele had died
+                    <br>on the boat. at his funeral his life was burnt down and turned
+                    <br>into a cross his father strung around his neck so he wouldn’t forget
+                    <br>he tucked it beneath his shirt and as a new person freshly created walked
+                    <br>in the streets with the people crushing like a wave he sought
+                </p>
+                <p>
+                    to be beyond the high water mark when the wave crested
+                    <br>to be entrenched rooted sunk clinging when it receded
+                    <br>back into the ocean.  I like to think that when he walked
+                    <br>at night he thought like I do about the millions of horizontal people
+                    <br>lying all around him like packages in a sprawling factory united
+                    <br>together truly only when they dreamt and their night selves climbed
+                    <br>undaunted up the ladders that by day proved too frail
+                    <br>for the weight of their bodies
+                </p>
+                <p>
+                    that type of climbing leaves marks on the hands
+                    <br>that fade with years, covered eventually by wrinkles
+                    <br>that obscure the stories    of holding things  of loving
+                    <br>of the cold,  quiet men and women at the heads of tables dying
+                    <br>into the air when the generations flip like pages
+                    <br>not much from the last is recorded on the next
+                    <br>nothing but a few facts and other entries
+                </p>
+                <p>
+                    that he was a plumber,  two stories: that
+                    <br>of his name and only one of his life, that when he was a child
+                    <br>he used to hide in the barrels when the labor
+                    <br>people came.  he had eight sons, the eighth was
+                    <br>the first to go to college a biology teacher
+                    <br>a grandfather a good man whose wife
+                    <br>a secretary too smart for her gender bought stock
+                    <br>in the hours when the children were asleep
+                    <br>and the sewing was done
+                </p>
+                <p>
+                    my mother spurned the city the urban spill
+                    <br>the grind and took me to Vermont to raise me
+                    <br>where the animals take the flat land and the people
+                    <br>barricade themselves in the hills    where there is time
+                    <br>to watch fires burn through their lives, where people
+                    <br>talk about the land like they built it birthed it
+                    <br>fostered it bled for it like they go back
+                </p>
+                <p>
+                    with it which they do only because these are new
+                    <br>forests growing in the places where their ancestors
+                    <br>were clear cut not many centuries ago we have
+                    <br>a different word for the clear cutting of people
+                    <br>but that doesn’t mean it didn’t happen too
+                    <br>or that the story of this isn’t a little bit the story of that
+                </p>
+                <p>
+                    but the path my mother walked I walked it back
+                    <br>and sit now one more time in those eastern cities looking
+                    <br>to bleed these hands the name Gabriel does not end
+                    <br>my name and so I am at odds a bit with his story
+                    <br>the college boy instead of the laborer I am who he saw walk
+                    <br>by to somewhere as he took his lunch break I am the
+                </p>
+                <p>
+                    hoped for future I am the better life for his children
+                    <br>I am what his parents crossed oceans for I am what
+                    <br>they  killed for when they held their son down
+                    <br>in the Hudson and pulled him out baptized anew
+                    <br>in the land of freedom
+                    <br>and I am just as new in these streets as he was
+                    <br>and twice as young
+                </p>
+
+            </div>
+        </article>
+    </section>
+<!-- <a class="share" target="_blank" href="
+    http://facebook.com/sharer/sharer.php?u=http://tuftsobserver.org/parts-i-ii/">Share On Facebook</a> -->
+    <section class="lit" id="knox">
+        
+        <article>
+            <div class="title">
+                <h1><a class="share" target="_blank" href="
+    http://facebook.com/sharer/sharer.php?u=http://tuftsobserver.org/parts-i-ii/">PARTS <span>I</span> & <span>II</span></span></a></h1>
+                <h3>By Liam Knox</h3>
+            </div>
+            <div class="body">
+                <p>
+                    I.
+                </p>
+                <p>
+                    smaller wider people in a smaller wider world, we were
+                    <br>combing life for seashell miracles and coming up not empty-handed
+                    <br>at its end a lantern in the cool night grass between root beer cans and
+                    <br>unprompted smiles
+                </p>
+                <p>
+                    how much higher could we aim than to stay yearning
+                    <br>to crack the eggshell sky, to stay woke under sheets
+                    <br>with our jackets on, plucking feather-splinters from the down with surgical care,
+                    <br>cooing seriously
+                </p>
+                <p>
+                    the crowning head of love didn’t care much about genitals
+                    <br>only the whirling clouds and the swinging sun and the ground beneath our asses
+                    <br>and hors d’oeuvres of cheese in plastic
+                    <br>as daydreams shimmered in the air like tuning forks
+                </p>
+                <p>
+                    If only my strides were as long, my eyes as wide, my soul as green as
+                    <br>crazy, lovely you unkempt, unknowable me
+                    <br>in a daze on the dais of my heart
+                    <br>in those days when I still knew where to find it
+                </p>
+                <p>
+                    II.
+                </p>
+                <p>
+                    The plastic desks shone cynically in a lecture hall
+                    <br>where we were told that, technically, you could
+                    <br>never really know what it was like to be your past self
+                    <br>because consciousness never renews its momentary lease
+                    <br>in the mind—just picks up and moves out
+                    <br>and leaves its shit behind.
+                </p>
+                <p>
+                    Nowadays, I search for you in
+                    <br>everyone.
+                </p>
+            </div>
+        </article>
+    </section>
+
+    <section class="lit" id="pong">
+<!--         <a class="share" target="_blank" href="
+    http://facebook.com/sharer/sharer.php?u=http://tuftsobserver.org/breaking/">Share On Facebook</a> -->
+        <img src="img/pong2.jpg">
+        <article>
+            <div class="title">
+                <h1><a class="share" target="_blank" href="
+    http://facebook.com/sharer/sharer.php?u=http://tuftsobserver.org/breaking/">BREAKING</a></h1>
+                <h3>By Katharine Pong</h3>
+            </div>
+            <div class="body">
+                <p>
+                    so what had happened was this:
+                    <br> you were earnest and i thought that meant truthful
+                    <br>
+                    <span style="visibility:hidden">____</span>so i opened the trunk and pretended to look for something i lost
+                </p>
+                <p>
+                    they filmed that movie on the basketball court and we traced the lines on the concrete
+                    <br>
+                    <span style="visibility:hidden">____</span>(it’s not usually warm in san francisco but up there it was sunny)
+                </p>
+                <p>
+                    every day we walked
+                    <br>
+                    <span style="visibility:hidden">____</span>through the tunnel,
+                    <br>
+                    <span style="visibility:hidden">____</span><span style="visibility:hidden">____</span>with the cars and the kids and the women pulling their groceries behind them
+                    <br>
+                    <span style="visibility:hidden">____</span>sometimes there were puddles and i think we spent weeks avoiding them
+                </p>
+                <p>
+                    but what you did not know was this:
+                    <br> my middle name and my left foot and what i hear
+                    <br>
+                    <span style="visibility:hidden">____</span><span style="visibility:hidden">____</span>in the splitting of an orange
+                </p>
+                <p>
+                    the second floor apartment and those nectarine summers and why
+                    <br>
+                    <span style="visibility:hidden">____</span>i learned to cook pasta and write poems on red envelopes
+                </p>
+                <p>
+                    and the cold, and how your whole face is a moon
+                </p>
+                <p>
+                    and what I wanted to say was this:
+                    <br> Enough.
+                    <br> take it back—
+                    <br>
+                    <span style="visibility:hidden">____</span>the words you gave me,
+                    <br>
+                    <span style="visibility:hidden">____</span><span style="visibility:hidden">____</span>the cracked peach pit,
+                    <br>
+                    <span style="visibility:hidden">____</span><span style="visibility:hidden">____</span><span style="visibility:hidden">____</span> this unbutton at my collarbone
+                </p>
+            </div>
+        </article>
+        <img src="img/pong1.jpg">
+    </section>
+
+    <section class="lit" id="leonard">
+<!--         <a class="share" target="_blank" href="
+    http://facebook.com/sharer/sharer.php?u=http://tuftsobserver.org/midweek/">Share On Facebook</a> -->
+        <article>
+            <div class="title">
+                <h1><a class="share" target="_blank" href="
+    http://facebook.com/sharer/sharer.php?u=http://tuftsobserver.org/midweek/">MIDWEEK</a></h1>
+                <h3>By Liza Leonard</h3>
+            </div>
+            <div class="body">
+                <p>
+                    Before leaving the apartment, Hilda stands in front of her bedroom window and writes, “Stayed up until 4 a.m. with my art. My walls are close, and the more I create the more they converge. Lunch now with Brian.” She tucks the notebook into her bag.
+                </p>
+                <p>
+                    Her room is small, and the apartment cramped, but not as bad as could be expected from Manhattan. It’s littered with books, books of poetry and essays and strange fiction, and clothes and rolls of fabric and bags of scrap fabric from Parsons and the sewing machine, covered with the pins, and then there are the photos, the dozens of photos hung on the wall and the stacks of photo paper and dark-room experiments. The shoes run out from under the bed and congeal in the corner of her closet—a mess of scuffed skating shoes and chunky boots and impractical platforms. The windowsill, looking out at the brick and window patchwork of the nearest apartment building, is lined with potted plants and rocks and cigarette butts and half-drunken cups of tea.
+                </p>
+                <p>
+                    Hilda leaves the apartment, as usual, haphazardly. She adds another layer, a striped trench coat, to her long, sheer pink skirt and a cut T-shirt with a tombstone graphic on it, and walks down the hallway, past her roommates, sticking her ear phones in as she goes. Her roommate, Wally, is blowing leaves around in his room with a fan, but she doesn’t think much of it. She likes the way the red and orange leaves flutter around, the look of concentration on Wally’s face. In the next room, Gerard is lying in bed with two of his closest friends, mostly naked, snoozing to mellow electronic music, pale light streaming in through the slanted blinds that no one had enough energy to close. Hilda slips out of the apartment and twirls down the six winding flights of stairs.
+                </p>
+                <p>
+                    3rd street, between Avenues B and C, is too far from any relevant Subway station to get anywhere on time, but Hilda isn’t thinking about how she is keeping Brian waiting, how she is always keeping people waiting. She is thinking about the life-force of the city, the only energy she can detect these days. The city moves and swells, glimmers in the sun and dances after dark, the trains carry her through it all, with the strangers, with the people who are strangers but look like they could be friends, and with the strangers who are silent but look like they are begging to be asked about their story, about where they came from, and what they are doing here.
+
+                </p>
+                <p>
+                    Hilda reaches her favorite subway station, the F train on Second Ave, and descends down, pleased by the dark and the anonymity of it, the fact that people will look at her, her thin, wiry body, her unusual freckled face, her bruised legs sticking out of pink gauze, underwear visible, her thin tattooed arms and wrists, and maybe consider her for a moment, consider where she is off to and what tethers her to the earth, but then they will bustle on and no more energy or concern will attached to Hilda as she drifts through the subway station and rumbles uptown.
+
+                </p>
+                <p>
+                    She never likes traveling uptown, though. Downtown, and the Lower East Side, and Alphabet city, and sometimes Brooklyn, are what make up Hilda’s whole universe. It is the only place worth being, these days, she has decided. Midtown is intoxicated, drenched with the feelings of New York that Hilda wishes to escape. The commuters from the suburbs, from the suburb that she grew up in, flow in through midtown and disperse into office buildings by 9 a.m., but the feeling of impermanence persists. At least people downtown enjoy the night together. They watch it get dark and huddle together around coffee tables, get high and talk about movies, about music, and they sway together until it is time to find a bar that will keep them from their beds. This world is the only one Hilda can imagine herself living in. She is an art student, her friends are art students, and they deem that the only things worthy in life are those that provoke, that challenge.
+
+                </p>
+                <p>
+                    Riding uptown, Hilda draws out her notebook and writes, “Gave that homeless poet man a dollar. Still need to read his work. He is always there, outside my subway, never takes the subway. A life without subway.” She pauses for a moment and finally scribbles, “Injustice.”
+                </p>
+                <p>
+                    Hilda gets off at Bryant Park, grudgingly, as it is her least favorite view of the city, and walks to Grand Central, smoking two cigarettes on the way. The tourists are nauseating, as are the trees in the park, the people holding hands and taking pictures and eating sandwiches, the people asking her to take flyers. She focuses on reaching Brian, who will now have been waiting for 15 minutes. He is her only brother, and works at a midsize real estate law firm as a paralegal. She finally spots him on the designated corner outside of the train station and he grins and waves. He is tall, like Hilda, but with a tidy blond buzz cut and a professional ensemble consisting of dress pants, a light blue shirt, and a thin red tie.
+
+                </p>
+                <p>
+                    On the corner, in the middle of the crowds and the smell of street nuts and pretzels, they hug, pat each other on the back, and then stand next to each other, unsure of what to do next. After a moment of awkwardness, Brian speaks. “Want to walk over to that Indian buffet we went to with Dad?” he asks.
+                </p>
+                <p>
+                    “Yeah, that sounds good,” Hilda shrugs. It doesn’t matter to her, and now that she is here, with Brian, she realizes they haven’t seen each other in a month. They live in the same city and they haven’t seen each other in a month. What will they talk about now, she wonders. They start out on the few block walk to the Indian restaurant on 3rd and 46th. Hilda frowns, knowing that Midtown is a lousy place for lunch, especially on a weekday, but she doesn’t say anything.
+                </p>
+                <p>
+                    “Do you have class today?” Brian asks, trying to find a safe subject. It’s a Tuesday, class seems like a good option.
+                </p>
+                <p>
+                    “Yeah.” Hilda responds dispassionately. “I have three hour of printmaking tonight. I was working on my clothing construction midterm this morning. Sorry I was late.”
+                </p>
+                <p>
+                    “Sewing, huh? Can you make me a coat like this for me?” He pokes Hilda’s coat sleeve, the wooly combination of blue and yellow and black stripes.
+                </p>
+                <p>
+                    “I didn’t make this,” she says. “But I made the skirt.” The skirt is clearly see-through and the weather is cold. Goosebumps upon exposed skin. Brian chuckles at the thought of his sister concocting the garment, of deciding to wear it on a freezing cold day, of her wearing it to class, on the subway.
+                </p>
+                <p>
+                    They arrive at the restaurant. It is dimly lit, with embroidered tablecloths and rich red walls. The buffet is crowded, mostly with people in suits, and the pair is squeezed into a small table along the wall.
+                </p>
+                <p>
+                    They look at each other, now, head on, and take each other in. Hilda looks tired, her hair is in a messy, low knot and her face is pale and dark at the same time. Brian looks tired too, but in a neater way.
+                </p>
+                <p>
+                    “So what have you been up to, besides class,” Brian asks.
+                </p>
+                <p>
+                    Hilda does not know how to answer. She goes to class, goes to the studio to do her work, goes to work. Her days are always full. She is a hostess at a vegetarian restaurant on the Lower East Side, and she likes it a lot—she likes her gay coworker Emilio and the music they play in the staff room, she likes coming home with leftover cornbread for her roommates, and she likes the feeling of practicing to be an adult. Her life is not happy, because how can anyone ever be satisfied in this city, but she makes her art and she spends time with her friends and smokes weed in her apartment and this is what her peers are also doing and that feels good. She feels most alive late at night, almost morning, when she is in the middle of a drawing and her room suddenly doesn’t feel confining—it feels nurturing, and her hand spins wildly on the paper, her mind is dark, the music loud and raucous, and she sees something happening, even though her art is not fine, it feels like the only important thing. But she couldn’t tell any of this to Brian. No, she couldn’t. That would require too much backtracking into how she came to choose what is good and what she learned here in the city. Just like he showed her his favorite bands six years ago as an introduction to adolescence, Hilda would have to show him her favorite books and photos and art in order for him to understand. It is all history, the history of the city and the artists that came before. The ones who came here poor and lonely and created their work in the Village, in the Chelsea Hotel, anywhere they could. Hilda could not explain this to Brian right now, not as he took his lunch break from his law firm where he reads and rereads documents to report back to his higher ups. She knows he might be right, in some ways, but right now she could not compute the distance between them. She reports, instead, that she has been working at the vegetarian restaurant and drinking less.
+                </p>
+                <p>
+                    There is silence. Brian eats his lamb vindaloo and saag paneer. Hilda tears tiny pieces of naan bread and puts them on her tongue one at a time, letting them dissolve into nothingness.
+                </p>
+                <p>
+                    Another question. “How is Geranium? Have you talked to her recently?” Brian asks.
+                </p>
+                <p>
+                    “Yeah, she’s ok. She sends me her photos every once in awhile. I have some of them on my wall. I’ll see her when we go home for Thanksgiving, I guess.”
+                </p>
+                <p>
+                    Brian’s mouth is full, but he nods. He does not know what to say. Hilda and Geranium do not operate within his rules. Brian wakes up early, walks 20 blocks to work, gets an iced coffee on the way, and sits at his desk until five. This is sometimes interrupted by a lunch outside of the office, with his Dad or a co-worker, or Hilda, when they manage to make a plan. He feels like shaking Hilda, telling her to quit this childish act of dancing around with her art and her crazy outfits. Of stomping around New York in thick heeled boots or capes or kimonos or whatever Hilda is wearing that week. He doesn’t understand an obsession with being seen, not just as yourself but as a specific installment of yourself, and then showing the world.
+                </p>
+                <p>
+                    “That’s good. I’m excited to go home for Thanksgiving too,” he says.
+                </p>
+                <p>
+                    They finish lunch, and Brian pays. They walk the few short blocks back to Grand Central, chatting about their mom and dad and mutual friends from home. Hilda talks about the pies she is going to make on Thanksgiving, and Brian tells her that he can’t wait to try them.
+                </p>
+                <p>
+                    At the station, Brian has to hurry back upstairs to work, and he gives Hilda another hug. Hilda pulls out her notebook and starts the walk to her beloved subway, to her subway that will ferry her to her downtown haven, and her attention is focused only on her words on the page and the small stretch of sidewalk in front of her. She will write all the way home.
+                </p>
+            </div>
+        </article>
+    </section>
+
+    <section class="lit" id="lombard">
+<!--         <a class="share" target="_blank" href="
+    http://facebook.com/sharer/sharer.php?u=http://tuftsobserver.org/a-movie-theatre-ballad/">Share On Facebook</a> -->
+        <article>
+            <div class="title">
+                <h1><a class="share" target="_blank" href="
+    http://facebook.com/sharer/sharer.php?u=http://tuftsobserver.org/a-movie-theatre-ballad/">A MOVIE THEATRE BALLAD</a></h1>
+                <h3>By Kevin Lombard</h3>
+            </div>
+            <div class="body">
+                <p>
+                    My foot taps out every ticking second on the clock.
+                    <br>Popcorn rattles off machine gun fire behind the counter.
+                    <br>Los Angeles is roaring quietly in the background.
+                </p>
+                <p>
+                    It’s 5:27, and any moment now you’ll walk in.
+                    <br>You’ll carry with you a baseball cap,
+                    <br>a pack of microwaveable Kraft mac ’n cheese,
+                    <br>and the weight of a year and a half in dissolution.
+                </p>
+                <p>
+                    I have been leaking sweat since 1:34,
+                    <br>and I think of how this building
+                    <br>has told the stories of lightsabers and Lion Kings,
+                    <br>hobbits and hobgoblins, royals and romances.
+                </p>
+                <p>
+                    You part the glass seas, but all I notice are
+                    <br>gazebos with Christmas lights, seaside sandwiches,
+                    <br>and steely eyes.
+                </p>
+                <p>
+                    And as I listen to the rumble of overdone proposal scenes,
+                    <br>Decepticons, and Melissa McCarthy’s gunshots,
+                    <br>I realize our story was never meant for the big screen.
+                </p>
+            </div>
+        </article>
+    </section>
+
+    <section class="lit" id="arora">
+<!--         <a class="share" target="_blank" href="
+    http://facebook.com/sharer/sharer.php?u=http://tuftsobserver.org/saffron/">Share On Facebook</a> -->
+        <article>
+            <div class="title">
+                <h1><a class="share" target="_blank" href="
+    http://facebook.com/sharer/sharer.php?u=http://tuftsobserver.org/saffron/">SAFFRON</a></h1>
+                <h3>By Aishvarya Arora</h3>
+            </div>
+
+            <div class="quote">
+                <p>
+                    “I had no idea that the gate I would step through
+                    <br>to finally enter this world
+                    <br>
+                    <br>would be the space my brother's body made.”
+                </p>
+                <p style="text-align: right">
+                    -Marie Howe, “ The Gate”
+                </p>
+            </div>
+
+            <div class="body">
+                <p>
+                    Fields of saffron brush
+                    <br>sprout tender from his soles, both mounted
+                    <br>on tendons like finely strung
+                    <br>threads, precious and crimson
+                    <br>and snapping
+                </p>
+                <p>
+                    He works with wrist and spine
+                    <br>the radius he forms
+                </p>
+                <p>
+                    collapsing into itself, curving
+                    <br>to bring mouth to food.
+                </p>
+                <p>
+                    We seek our salvation
+                    <br>in that curvature, disbelief
+                </p>
+                <p>
+                    at the energy of this earth to form
+                    <br>such holy structures
+                    <br>in destructible places.
+                </p>
+                <p>
+                    We chant around him gathering water and wood,
+                    <br>trading spices for coins.
+                </p>
+                <p>
+                    My mother, waxen
+                    <br>burns and slows
+                    <br>in shadows—
+                </p>
+                <p>
+                    eyes slanted always to the Gods
+                    <br>she keeps in our closets,
+                    <br>seated surely and counting
+                </p>
+                <p>
+                    with rhythm so still, patient
+                    <br>I expect to pick sparrows from her hair.
+                </p>
+                <p>
+                    When I was young she’d encase me in orbits
+                    <br>of sugar and tea leaves.
+                </p>
+                <p>
+                    Now I lie here naked in my limbs—temple
+                    <br>incense burning around me
+                </p>
+                <p>
+                    waiting to be preserved, dark
+                    <br>emeralds in my mouth:
+                </p>
+                <p>
+                    my thoughts fizzing.
+                </p>
+            </div>
+        </article>
+    </section>
+
+
+
+    <section class="lit" id="moore">
+<!--         <a class="share" target="_blank" href="
+    http://facebook.com/sharer/sharer.php?u=http://tuftsobserver.org/scooby-doo-enters-the-diary-room/">Share On Facebook</a> -->
+        <article>
+            <div class="title">
+                <h1><a class="share" target="_blank" href="
+    http://facebook.com/sharer/sharer.php?u=http://tuftsobserver.org/scooby-doo-enters-the-diary-room/">SCOOBY-DOO <br>ENTERS THE<br> DIARY ROOM</a></h1>
+                <h3>By Jonathan Jacob Moore</h3>
+            </div>
+
+            <div class="body">
+                <p>
+                    i am fed to pretend that i believe in ghosts
+                    <br>they want to make a terrified thing out of this great dane
+                    <br>like we the same species
+                    <br>do you know how it feels to eat yourself
+                    <br><span style="visibility:hidden">____</span>out of fear
+                    <br>they feed them to shaggy too
+                    <br><span style="visibility:hidden">____</span>when he gets scared
+                    <br>ever been fed to your master
+                    <br><span style="visibility:hidden">____</span>that nigga wild/all tall and terrified/all down to cuddle in the dark
+                    <br><span style="visibility:hidden">____</span>all white boy with no job/no sense and nothing but
+                    <br><span style="visibility:hidden">____</span>a hunger/i trust its constancy
+                    <br>i cannot trust people i have never seen eat/i have never unmasked a villain whose name i did not know already/whose prints were not everywhere to begin with/i am colorblind/i know my place
+                </p>
+                <p>
+                    have you ever seen them take my collar off
+                    <br>must be nice to pretend i’m not speaking english get away with it even though
+                    <br>they bought me this tongue even though they bought me
+                </p>
+                <p>
+                    i have never run away i ain’t got a mystery machine of my own i am cog & the main attraction he who solves he who begs to go home and be done with the hauntings they ask where i am but know i ain’t going anywhere i am fed to pretend that i can’t grab the wheel and drive this shit into the great dismal lock the doors watch them take off each other’s masks i am fed to pretend that i’m on payroll and this is passion project i have spent my life in graveyards i am certain that bones are all that is left bones and bones and greed i am fed to pretend that i’m most afraid when we split up and i’m left with the boy who knows not how heavy he is stays jumping into my arms rubbing his lipless mouth over my collar queer dropping my Y sweet calling me scoob when they name you your name is glass to be broken i am most afraid when i pull the mask off and pretend i didn’t know the villain all along
+                </p>
+                <p>
+                    i look like
+                    <br><span style="visibility:hidden">____</span>villain/ these guilty godless days/
+                    <br><span style="visibility:hidden">____</span>you don’t see
+                    <br><span style="visibility:hidden">____</span>how they smile at me/relieved
+                    <br>as if to say every muscle in your face calls your bluff/mutt
+                    <br>will you ever stop pretending
+                </p>
+            </div>
+        </article>
+    </section>
+
+    <section class="lit" id="kankam-nantwi">
+<!--         <a class="share" target="_blank" href="
+    http://facebook.com/sharer/sharer.php?u=http://tuftsobserver.org/roots/">Share On Facebook</a> -->
+        <img src="img/roots.jpg">
+        <article>
+            <div class="title">
+                <h1><a class="share" target="_blank" href="
+    http://facebook.com/sharer/sharer.php?u=http://tuftsobserver.org/roots/">ROOTS</a></h1>
+                <h3>By Yaa Kankam-Nantwi</h3>
+            </div>
+
+            <div class="body">
+                <p>
+                    Black woman, the crown is in in your name
+                    <br>do not sleep on the centuries of wisdom and strength dormant in your bones
+                    <br>our warrior's spirit passed down
+                    <br>along with battle ploys inherited from the sages before us
+                </p>
+                <p>
+                    Black woman, the only error is the system
+                    <br>your existence is resistance
+                    <br>your anger flows with truths that are yet to be discovered
+                    <br>they say we are disrupting the peace, but when were we ever allowed to rest?
+                </p>
+                <p>
+                    Black woman,
+                    <br>I am an orbit in and of myself
+                    <br>Black
+                    <br>Woman
+                    <br>Womyn
+                    <br>Axis : Soul
+                    <br>time and tide wait for no man
+                    <br>and neither do I
+                    <br>how can we give life, but not deserve our own?
+                </p>
+            </div>
+        </article>
+        <img src="img/roots2.jpg">
+    </section>
+
+    <section class="lit" id="gavin">
+<!--         <a class="share" target="_blank" href="
+    http://facebook.com/sharer/sharer.php?u=http://tuftsobserver.org/ice/">Share On Facebook</a> -->
+        <article>
+            <div class="title">
+                <h1><a class="share" target="_blank" href="
+    http://facebook.com/sharer/sharer.php?u=http://tuftsobserver.org/ice/">ICE</a></h1>
+                <h3>By Hailey Gavin</h3>
+            </div>
+            <div class="body">
+                <p>
+                    I use the slippery blood of guilt which jangles around under my skin to get my work done and write essays and turn them in and go to class and drink until I don’t think and think until the waves of guilt subside enough to drink until I smoke and giggle and cry and listen and sway to terrible dubstep and pink flashing lights and wake up to hot eggs, hot and falling apart from each other and get mushy enough in the gut that I have to go to the gym to salivate on the treadmill and look at my reflection in the big windows but feel good walking back sore to the freshman common room where I stare at my homework and then kiss you for two hours and then use my sheets to drown my body to sleep unless the essay due date is tomorrow in which case I’ll keep my eyes exploding with tiny green pieces of my insides all night on the moldy orange and purple chairs and then force myself into the great cold blue air and then the red warm cafe and drink a gingerbread caramel latte and write my essay until the computer clock tells me to stop.
+                </p>
+                <p>
+                    “Be quiet,” my RA Anna squeaks when I try to play guitar. I play quietly but the walls are made of Swiss cheese. Anna lives right next to me but I’ve never seen her face. She inhabits layers of scarves and jewelry and lipstick and bumpy, sculpted eyelashes and pale, cakey foundation.
+                </p>
+                <p>
+                    “No one’s asleep,” I say. It’s only 4 p.m.
+                </p>
+                <p>
+                    “There are consideration hours during midterms,” Anna squeaks back through the cheese walls. “24-hour silence. Didn’t you see the signs I taped up?”
+                </p>
+                <p>
+                    “No,” I smash my fingers up down up down on an F chord.
+                </p>
+                <p>
+                    “People are studying.”
+                </p>
+                <p>
+                    “Let music into your life.”  So I get a noise violation and have to talk to a bald man for five minutes. Before she writes down my ID number, Anna walks over and says in the doorway, “Stop breaking the rules.”
+                </p>
+                <p>
+                    After that I try to break the rules as often as I can. I pocket cheerios and forks and apples and slide whipped cream cans into my backpack when I leave the dining hall. I pee in the boy’s bathroom and get you to pee in the girl’s bathroom. I sit on the roof of my building, gazing at the long triangles of drifting snow that the streetlights make in the black night, and flipping sticks and pieces of ice over the edge so that they fall past Anna’s window. My friends and I scream “shots of vodka!” when we drink shots of vodka and then hide everything in a drawer when Anna marches over. She squeaks, is there alcohol here from behind the scarf that covers her sharp lips and we say nope, isn't it a lovely evening.
+                </p>
+                <p>
+                    After a week of silence Anna finally retaliates. She writes me up for sneezing after the hour of 1 a.m. She tells me I have two noise violations and am now on thin ice. I ask her why her voice is squeaky and she narrows her eyes so I ask why her eyes are narrow.
+                </p>
+                <p>
+                    You and me have a conference about the amount of time we are spending together and decide for the sake of our studies that we should go to bed earlier. There are papers and gum wrappers and books and water bottles piling on top of each other on my desk. A layer of clothes which squirm under my feet when I sneak back from the night to tiptoe past my sleep-talking roommate is building and acquiring a stench. It’s time to get organized and normal. I do my laundry and we promise we’ll go to bed early.
+                </p>
+                <p>
+                    We are on our way to sleep but you catch me by the lip on the way to your room and our tongues and stomachs touch and then my friend stops me and his mouth and eyes swing upwards into scowl and he asks if I’ve filled out his online survey and of course I address him sarcastically with red laughing mouth and cheeks and his features fall back down into a grin and then later while I am brushing my teeth you remember that my coat is dark and soft on your dark soft floor and bring it to me and I poke your cheeks from both sides and we lie in your bed and turn our faces over the sheets and time turns one hour over into two so we get dressed to go outside and use our meal swipes before they expire and bring our backpacks to read in the library but two swaying meaty boys with candle eye glints wrap words around us into a conversation and offer us smoke and paper and we say no and grunt about the night and offer us smoke and paper and we say yes and then walk with giggles jumping out of our sealed mouths like water jumping out of a glass on a shaking table and sit in the library and beam at each other confused about the gap between our books and the world.
+                </p>
+                <p>
+                    The old, wiry man who closes the library catches the end of our 1 a.m. kisses and says when the library closes you guys gotta get the heck out and it’s not time to get all lovey dovey and then leaves and walks through the blue night, onto the red train, into the black tunnel.
+                </p>
+                <p>
+                    The next day we walk to the T while my dad cleans thousands of shards of things out of his San Francisco basement and they shift in his arms and drip from his fingers like piercing rocks when he turns hunched over with carrying and his thick beard and eyebrows move with him across the room. On the train, we eat burritos and your stomach bubbles like no one else’s. When you laugh your thick, goofy yellow hair shakes and your light green eyes collapse into strips of eyelash and your teeth look pointy like a werewolf’s. You have a cute, soft nose you say you wish was more ugly and manly. I tell you you look like a handsome psychopath from a movie. Boston has a red apocalyptic sky and red staggering huge, smooth buildings and red billboards advertising vodka and red, cold lips of people walking by.
+                </p>
+                <p>
+                    This night it’s 4:37 a.m. when I tap open the door with one finger and tiptoe through the sliver of light that falls into my room out of the hallway and my roommate’s mouth tilted back from the covers is wide like she’s swallowing her dreams. You follow me, swinging and catching the door so it almost smacks the room into to noise and life, but doesn’t. You are carrying the papers and books and headphones and computer charger chords that I left in the common room. “Ssh,” I whisper with a goofy, maniacal grin and feel my heart leap into my throat like a frog testing its legs as sleep deprived joy and panic confuse each other inside my chest. You let my things tumble into my bed and my phone slips from the space between your pinky and your hip and I giggle and then look away but you grab my hand and touch the hot, sharp tear blooming in the corner of my eye.
+                </p>
+                <p>
+                    “Are you okay?”
+                </p>
+                <p>
+                    “I’m just stressed.”
+                </p>
+                <p>
+                    “Is there anything I can do?”
+                </p>
+                <p>
+                    “No,” I laugh.
+                </p>
+                <p>
+                    “What’s funny?”
+                </p>
+                <p>
+                    I laugh again, “Goodnight.”
+                </p>
+                <p>
+                    You say goodnight and I don’t look back at you when you leave.
+                </p>
+                <p>
+
+                    Some nights I dream that I’m walking through the library shelves and they are smooth rectangles that pass into more shelves that never end. My left boot squeak-moans a high-pitched squeak-moan on every other step. But some nights I dream in hysteric epileptic bursts of scrubbing black paint off my eyelids and cheeks that smears and jerks under my twitching hands but doesn’t come off and I scream I love you soundlessly into the side of my mom’s face but she doesn’t believe me. From far away you look more crooked and lovable, all lopsided from the side with your hair small on one side and big on the other and your neck light brown and vulnerable, leaned over your paper. Two days later I actually text my mom I had a dream about you haha, I miss our conversations and she doesn’t respond for a while which is fine because parent texts don’t follow the rules. The rules say that sweaty, food smeared thumbs compose an interconnected web of tiny guilts and sores that stretch on forever like red and white lights on the highway.
+
+                </p>
+                <p>
+                    We go to a concert and it’s a small show so we stand at the very front and look up at the angry musicians whose bodies without sound look bent and ugly. A guitar starts and a white-faced girl steps forward and her features under the light look strange and ugly like they are too big or too close to the edges of her face. Then she lets her head collapse towards the mic and her song begins to fall slowly out of her and the whole room changes. We are limp and uniform on the puppet strings of her voice. She tells us that there are birds inside her throat trying to crawl down and peck crumbs off of her heart.
+                </p>
+                <p>
+                    One day I am inside Anna’s room trying to find and remove the fake, mocking Valentine’s Day card you wrote to Anna in a moment of hysterical, mean-spirited glee and I leave her door cracked open so that I can hear if anyone walks up the stairs and I tiptoe over the carpet and open groaning drawers and lift up pillows. The building that I will live in next year will be brick red and we will walk around its hallways with half circles of sleepless ache around our eyes and over the summer I’ll forget that you exist in three dimensions and you’ll frown a nervous frown when we Skype and blood will fall faster past my heart when your name glows on my phone. I hear four boot steps follow each other right outside the door and I freeze in a spasm of stillness with one of Anna’s textbooks in my hand. I know that she’s stopped outside because she is interested in the not-closed nature of the door she left closed when she departed and I imagine her head cocked side ways, eyes narrow, mouth frowning so heavily it almost slips from her face. She throws the door open and her figure fills up the door way.
+                </p>
+                <p>
+                    “That’s it!” she says.
+                </p>
+                <p>
+                    “What do you mean that’s it?”
+                </p>
+                <p>
+                    “You’re not living here anymore.”
+                </p>
+                <p>
+                    A petrified grin squeezes my lips apart and I chuckle, “What?”
+                </p>
+                <p>
+                    “You’re not living here anymore. I don’t have to put up with this.”
+                </p>
+                <p>
+                    “What do you mean?”
+                </p>
+                <p>
+                    “I’m filing a harassment complaint with Rez Life.”
+                </p>
+                <p>
+                    “That’s crazy.”
+                </p>
+                <p>
+                    “You’ll be moved to a different building.”
+                </p>
+                <p>
+                    “There must be something else.”
+                </p>
+                <p>
+                    Anna is silent for a moment and gives me a hard look that makes me feel closer to her than I ever have, like her fingernails are under my skin, “It’s over.”
+                </p>
+            </div>
+        </article>
+    </section>
+<!--        <a class="share" target="_blank" href="
+    http://facebook.com/sharer/sharer.php?u=http://tuftsobserver.org/clarity/">Share On Facebook</a> -->
+    <section class="lit" id="dorian">
+ 
+            <article>
+                <div class="title">
+                    <h1><a class="share" target="_blank" href="
+    http://facebook.com/sharer/sharer.php?u=http://tuftsobserver.org/clarity/">CLARITY</a></h1>
+                    <h3>By Nick Dorian</h3>
+                </div>
+                <div class="body">
+                <p>
+                    Once, I passed a teepee on the highway 
+                    <br>but I didn’t know anything. Then you wrote 
+                    <br>to me that you lived the Navajo life for 
+                    <br>two weeks. How you were witness to night catching the scent of the stars in its palm, 
+                    <br>so it’s just you, the fire, and a billion pinhole apertures expanding across the 
+                    <br>noiseless inheritance. How mothers and their daughters 
+                    <br>and their grandmothers weave their own patterning dreams and rugs from 
+                    <br>the sky so they can sleep among their ancestors. 
+                </p> 
+                <p>
+                    You told me how they have words for everything 
+                    <br>we don’t and the children play in the dusty light that turns 
+                    <br>dark pink. How bus rides with strangers are worth 
+                    <br>eight hours because the mountain views are prodigious 
+                    <br>but not ambitious and there is never an opportunity 
+                    <br>for you to sigh and think what am I doing here because 
+                    <br>home isn’t something you question or consciously search 
+                    <br>for, home finds you when it peeks out from the pockets 
+                    <br>of nopales and red rocks to hum with the deep wind, when 
+                    <br>it lulls you to sleep at night with ease, when it fills all the space between your 
+                    <br>bones and soul that you didn’t know existed.  
+                </p>
+                </div>
+            </article>
     </section>
 
     <script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
     <script>
         window.jQuery || document.write('<script src="js/vendor/jquery-1.12.0.min.js"><\/script>')
+    </script>
+    <script>
+        $(function () {
+            var currentHash = "#initial_hash"
+            $(document).scroll(function () {
+                $('.anchor_tags').each(function () {
+                    var top = window.pageYOffset;
+                    var distance = top - $(this).offset().top;
+                    var hash = $(this).attr('href');
+                    // 30 is an arbitrary padding choice, 
+                    // if you want a precise check then use distance===0
+                    if (distance < 30 && distance > -30 && currentHash != hash) {
+                        window.location.hash = (hash);
+                        currentHash = hash;
+                    }
+                });
+            });
+        });
+
 
     </script>
     <script src="js/plugins.js"></script>

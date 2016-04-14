@@ -3,21 +3,34 @@
   src: url('../fonts/minion.ttf')
 }
 
-@font-face {
+/*@font-face {
   font-family: 'Gotham';
-  src: url('../fonts/Gotham/GOTHAM-BOLD.ttf');
+  src: url('../fonts/GOTHAM-BOLD.TTF');
 }
+*/
+@font-face {
+    font-family: 'Gotham';
+    src: url('../fonts/gotham-bold-webfont.eot');
+    src: url('../fonts/gotham-bold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/gotham-bold-webfont.woff2') format('woff2'),
+         url('../fonts/gotham-bold-webfont.woff') format('woff'),
+         url('../fonts/gotham-bold-webfont.ttf') format('truetype'),
+         url('../fonts/gotham-bold-webfont.svg#gotham_boldregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
 
+}
 
 html {
 	font-family: 'Minion';
-	overflow-y: scroll;
- 	overflow-x: hidden;
+ 	max-width: 100%;
+    overflow-x: hidden!important;
  	position: relative;
 }
 
 body {
-	overflow-x: hidden;
+	max-width: 100%!important;
+    overflow-x: hidden!important;
 }
 
 h1, h3 {
@@ -28,9 +41,113 @@ h1 {
 	letter-spacing: -3px;
 }
 
+.share {
+	color: inherit;
+	text-decoration: none;
+}
+
+.share:visited {
+	color: inherit;
+	text-decoration: none;
+}
+
+
+.share:hover {
+	color: red;
+	cursor: pointer;
+}
+
 .lit {
 	display: block;
 }
+
+
+/* cover */
+.lit#cover {
+	background-image: url(../img/Cover.jpg);
+	background-size: cover;
+	background-attachment: fixed;
+	color: white;
+}
+
+.lit#cover h1, .lit#cover h3 {
+	margin: 0;
+}
+
+.lit#cover h1 {
+	font-size: 5em;
+}
+
+.lit#cover .title {
+	line-height: 2em;
+}
+
+.lit#cover article {
+	padding: 7em 7em;
+}
+
+.lit#cover .body {
+	margin-top: 2em;
+	font-size: 1.2em;
+}
+
+.lit#cover a {
+	text-decoration: none;
+	font-family: 'Gotham';
+	color: white;
+	line-height: 20px;
+}
+
+
+.lit#cover a::before,
+.lit#cover a::after {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 1px;
+	background: #fff;
+	content: '';
+	opacity: 0.2;
+	-webkit-transition: opacity 0.3s, height 0.3s;
+	-moz-transition: opacity 0.3s, height 0.3s;
+	transition: opacity 0.3s, height 0.3s;
+}
+
+.lit#cover a::after {
+	top: 100%;
+	opacity: 0;
+	-webkit-transition: -webkit-transform 0.3s, opacity 0.3s;
+	-moz-transition: -moz-transform 0.3s, opacity 0.3s;
+	transition: transform 0.3s, opacity 0.3s;
+	-webkit-transform: translateY(-10px);
+	-moz-transform: translateY(-10px);
+	transform: translateY(-10px);
+}
+
+.lit#cover a span:first-child {
+	z-index: 2;
+	display: block;
+	font-weight: 300;
+}
+
+.lit#cover a span:last-child {
+	z-index: 1;
+	display: block;
+	padding: 4px 0 0 0;
+	color: rgba(0,0,0,0.4);
+	text-shadow: none;
+	text-transform: none;
+	font-style: italic;
+	font-size: 0.75em;
+	font-family: 'Minion Pro', serif
+}
+
+.lit#cover a:hover {
+	color: red;
+}
+
+
 
 /* DIG BY GRACE KONSTANTIN */
 .lit#konstantin {
@@ -72,8 +189,11 @@ h1 {
 	font-size: 11.5em;
     margin-top: 60px;
     margin-left: 0px;
-    margin-right: -110px;
+    margin-right: -100px;
+    -ms-transform: rotate(-90deg);
+    -webkit-transform: rotate(-90deg);
 	transform: rotate(-90deg);
+	/*-ms-transform-orig: rotate(-90deg);*/
 	transform-origin: left top 10;
 }
 
@@ -125,32 +245,32 @@ h1 {
 }
 
 
-/* PAPA BY CARISSA FLUERY */
-.lit#fluery {
+/* PAPA BY CARISSA fleury */
+.lit#fleury {
 	background-color: #FBF4F4;
 }
 
-.lit#fluery article {
-	width: 70%;
-	margin: 0 auto;
+.lit#fleury article {
+	width: 95%;
+	margin: 0 5% 0;
 }
 
-.lit#fluery .title {
+.lit#fleury .title {
 	text-align: left;
 	padding-bottom: 3em;
 }
 
-.lit#fluery h1 {
+.lit#fleury h1 {
 	text-transform: uppercase;
 	font-size: 5em;
 	line-height: 1em;
 }
 
-.lit#fluery h1, .lit#fluery h3 {
+.lit#fleury h1, .lit#fleury h3 {
 	margin: 0;
 }
 
-.lit#fluery .body {
+.lit#fleury .body {
     -moz-column-count: 3;
     -moz-column-gap: 30px;
     -webkit-column-count: 3;
@@ -159,52 +279,52 @@ h1 {
     padding-bottom: 10%;
 }
 
-.lit#fluery #first {
+.lit#fleury #first {
 	-webkit-margin-before: 0em;
 }
 
-.lit#fluery img {
+.lit#fleury img {
 	width: 100%;
 }
 
-/* 01.09.2014 BY EMMA PINkSY */
-.lit#pinksy article {
+/* 01.09.2014 BY EMMA pinsky */
+.lit#pinsky article {
 	width: 30%;
 	margin: 0 auto;
 }
 
-.lit#pinksy .body {
+.lit#pinsky .body {
 	text-align: justify;
 	font-size: 1.1em;
 }
 
-.lit#pinksy .title {
+.lit#pinsky .title {
 	text-align: center;
 }
 
-.lit#pinksy h1 {
+.lit#pinsky h1 {
 	font-size: 4em;
 	margin-bottom: 0px;
 	color: #300066;
 }
 
-.lit#pinksy h3 {
+.lit#pinsky h3 {
 	font-size: 1.5em;
 	margin-top: 0px;
 }
 
-.lit#pinksy p {
+.lit#pinsky p {
 	text-indent: 35px;
 	margin: 0px;
 }
 
-.lit#pinksy .body > h1 {
+.lit#pinsky .body > h1 {
 	text-align: center;
 	margin: 0px;
 	margin-bottom: -30px;
 }
 
-.lit#pinksy img {
+.lit#pinsky img {
 	display: block;
 	margin: 75px auto;
 	width: 40%;
@@ -259,8 +379,9 @@ h1 {
 /* BIG FORKS by GABBY BONFIGLIO */
 .lit#bonfiglio {
 	padding-top: 10vh;
-	overflow-x: hidden;
+	overflow: hidden;
 	position: fixed;
+	max-width: 100%;
 }
 
 .lit#bonfiglio article {
@@ -287,7 +408,7 @@ h1 {
 .lit#bonfiglio .body {
 	text-align: justify;
 	font-size: 1.2em;
-	overflow-x: hidden;
+	overflow-x: hidden!important;
 }
 
 .lit#bonfiglio p {
@@ -307,7 +428,6 @@ h1 {
 	width: 50%;
 	position: absolute;
 	left: 80%;
-	overflow: hidden;
 
 }
 
@@ -316,6 +436,7 @@ h1 {
 	width: 50%;
 	position: absolute;
 	right: 80%; 
+
 }
 
 .lit#bonfiglio #fork {
@@ -331,7 +452,7 @@ h1 {
 	background-image: url(../img/kesslen2.jpg);
 	background-size: cover;
 	background-attachment: fixed;
-	color: white;
+	color: #ffe0e0;
 	margin: 0 auto;
 	width: 100%;
 	text-align: center; 
@@ -369,14 +490,14 @@ h1 {
 }
 
 /* HELLO BY JUDY CHEN */
-.lit#judy {
+.lit#chen {
 	height: 100vh;
 	background-image: url(../img/chen.jpg);
 	background-size: cover;
 	/*background-attachment: fixed;*/
 }
 
-.lit#judy article {
+.lit#chen article {
 	margin: 0 auto;
     margin-right: 10%;
     padding: 2% 5%;
@@ -386,31 +507,31 @@ h1 {
 	background-color: rgba(0,0,0,.5);
 }
 
-.lit#judy h1, .lit#judy h3 {
+.lit#chen h1, .lit#chen h3 {
 	text-align: center;
 	margin: 0;
 	color: white  ;
 }
 
-.lit#judy h1 {
+.lit#chen h1 {
 	font-size: 3em;
 }
 
-.lit#judy .body {
+.lit#chen .body {
 	font-size: 1.2em;
 }
 
-.lit#judy .left {
+.lit#chen .left {
 	text-align: left;
 	margin: 0;
 }
 
-.lit#judy .middle {
+.lit#chen .middle {
 	text-align: center;
 	margin: 0;
 }
 
-.lit#judy .right {
+.lit#chen .right {
 	text-align: right;
 	margin:0;
 }
@@ -534,7 +655,8 @@ h1 {
 	font-size: 1.3em;
 	margin-top: 10%;
 	width: 30%;
-	float: left;
+	/*float: left;*/
+	display: block
 }
 
 .lit#hinchman img {
@@ -544,5 +666,432 @@ h1 {
 	left: 60%; 
 }
 
+/* A LETTER ON THE BY HENRY allison */
+.lit#allison {
+	background-image: url(../img/allison.jpg);
+	background-size: contain;
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+	color: black;
+}
 
+.lit#allison article {
+	width: 40%;
+	padding: 5em 2em;
+	background-color: rgb(255,255,255);
+	margin-left: 30%
+}
 
+.lit#allison h1 {
+	margin: 0;
+	font-size: 3em;
+	color: #DBCB5C;
+}
+
+.lit#allison .title {
+	width: 135%;
+}
+
+/* parts 1&2 by liam knox */
+.lit#knox {
+	/*height: 100vh;*/
+	background-image: url(../img/knox.jpg);
+	background-size: contain;
+	background-position: right;
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+	text-align: right;
+}
+
+.lit#knox article {
+	width: 50%;
+	margin-left: 10%;
+	padding: 3em 0;
+}
+
+.lit#knox h1, .lit#knox h3 {
+	margin: 0;
+}
+
+.lit#knox h1 {
+	font-size: 4em;
+}
+
+.lit#knox h1 > a > span {
+	color: gold!important;
+}
+
+/* bReaking by kat pong */
+.lit#pong {
+	width: 100%;
+	background-color: black;
+}
+.lit#pong img {
+	width: 60%;
+	margin:0 auto;
+	display: block;
+}
+
+.lit#pong article {
+	width: 50%;
+	margin: 0 auto;
+	padding: 5em 5%;
+	background-color: white;
+
+}
+
+.lit#pong h1, .lit#pong h3 {
+	margin: 0;
+	text-align: left;
+}
+
+.lit#pong h1 {
+	font-size: 5em;
+	color: #075C98;
+}
+
+.lit#pong .body {
+	text-align: left;
+	font-size: 1.1em;
+}
+
+/* MIDWEEK BY LIZA LEONARD */
+.lit#leonard {
+	background-image: url(../img/leonard.jpg);
+	background-size: cover;
+	background-attachment: fixed;
+}
+
+.lit#leonard h1, .lit#leonard h3 {
+	margin: 0;
+	color: white;
+	text-align: center
+}
+
+.lit#leonard h1 {
+	font-size: 5em;
+}
+
+.lit#leonard article {
+	width: 60%;
+	margin: 0 auto;
+	padding: 4em;
+}
+
+.lit#leonard .body {
+	background-color: rgba(255,255,255,0.9);
+	padding: 2em 3em;
+	margin-top: 2em;
+	text-align: justify;
+	font-size: 1.1em;
+}
+
+.lit#leonard p {
+	text-indent: 35px;
+	margin: 0px;
+}
+
+/* A MOVIE THEATRE BALLAD By Kevin Lombard */
+.lit#lombard {
+	background-image: url(../img/lombard2.jpg);
+	background-size: contain;
+	background-attachment: fixed;
+	background-color: black;
+	color: white;
+}
+
+.lit#lombard h1, .lit#lombard h3 {
+	margin: 0;
+}
+
+.lit#lombard h1 {
+	font-size: 4em;
+	line-height: 1em;
+	text-align: left;
+}
+
+.lit#lombard h3 {
+}
+
+.lit#lombard .title {
+	width: 120%;
+	display: block;
+}
+
+.lit#lombard article {
+	background-color: rgba(0,0,0,.75);
+	width: 30%;
+	margin: 0 auto;
+	padding: 5em 4em;
+	background-image: url("http://www.transparenttextures.com/patterns/green-dust-and-scratches.png");
+/* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
+}
+
+.lit#lombard .body {
+	margin-top: 2em;
+	display: inline-block;
+}
+
+/*Saffron by Arora */
+
+.lit#arora {
+
+	background-image: url("http://www.transparenttextures.com/patterns/green-dust-and-scratches.png");
+}
+.lit#arora .title {
+	height: 100vh;
+	background-image: url(../img/arora.jpg);
+	background-size: contain;
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+	color: white;
+	margin: 0 auto;
+	width: 100%;
+	text-align: center; 
+	display: flex;
+    justify-content:center;
+    align-content:center;
+    flex-direction:column;
+}
+
+.lit#arora h1 {
+	font-size: 9em;
+	margin: 0;
+}
+
+.lit#arora .quote {
+	height: 80vh;
+	width: 60%;
+	margin: 0 auto;
+	font-size: 2em;
+		display: flex;
+    justify-content:center;
+    align-content:center;
+    flex-direction:column;
+}
+
+.lit#arora .body {
+	margin: 0 auto;
+	width: 60%;
+}
+
+/*scooby by jonathan jacob moore */
+.lit#moore {
+	background-image: url(../img/moore.jpeg);
+	background-size: cover;
+	height: 200vh;
+}
+
+.lit#moore article {
+	width: 70%;
+	margin: 0 auto;
+	padding: 5em 0;
+}
+
+.lit#moore h1, .lit#moore h3 {
+	margin: 0;
+}
+
+.lit#moore h1 {
+	font-size: 4em;
+	line-height: 1em;
+}
+
+.lit#moore .title {
+	color: white;
+}
+
+.lit#moore .body {
+	background-color: rgba(58,177,151,.70);
+	margin-top: 1em;
+	padding: .5em 1em;
+	color: white;
+	text-align: justify;
+	width: 60%;
+	background-image: url("http://www.transparenttextures.com/patterns/grunge-wall.png");
+}
+
+/* roots by yaa knakam-nantwi*/
+.lit#kankam-nantwi {
+	text-align: center
+}
+
+.lit#kankam-nantwi img {
+	width: 100%;
+}
+
+.lit#kankam-nantwi article {
+	width: 70%;
+	margin: 0 auto;
+}
+
+.lit#kankam-nantwi h1 {
+	color: #632b4b;
+	letter-spacing: .25em;
+	font-size: 7em;
+	margin: 0;
+}
+
+.lit#kankam-nantwi h3 {
+	margin: 0;
+	font-size: 2em;
+	color: #632b4b;
+}
+
+.lit#kankam-nantwi .body {
+	margin: 3em 0;
+}
+
+/*ice by hailey gavin*/
+.lit#gavin {
+		background-image: url(../img/gavinice.jpeg);
+	background-attachment: fixed;
+}
+
+.lit#gavin h1, .lit#gavin h3 {
+	margin: 0;
+}
+
+.lit#gavin h1 {
+	font-size: 10em;
+	/*letter-spacing: 1em;*/
+
+}
+
+.lit#gavin article {
+	width: 50%;
+	margin: 0 auto;
+
+	padding: 5em;
+}
+
+.lit#gavin .title {
+	text-align: center;
+}
+
+.lit#gavin .body {
+	margin-top: 2em;
+	color: black;
+	font-size: 1.2;
+	text-align: justify;
+}
+
+.lit#gavin p {
+	margin: .5em;
+	text-indent: 35px;
+}
+
+/* clarity by nick dorian */
+.lit#dorian {
+	height: 200vh;
+	background-image: url(../img/dorian.jpg);
+	background-size: cover;
+}
+
+.lit#dorian h1, .lit#dorian h3 {
+	margin: 0;
+}
+
+.lit#dorian h1 {
+	font-size: 5em;
+}
+
+.lit#dorian article {
+	color: white;
+	/*margin: 6em;*/
+	padding: 6em;
+}
+
+.lit#dorian .body {
+	font-size: 1.1em;
+}
+.cd-nav-trigger {
+  display: none;
+}
+
+.no-touch #cd-vertical-nav {
+  position: fixed;
+  right: 40px;
+  top: 50%;
+  bottom: auto;
+  -webkit-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  -o-transform: translateY(-50%);
+  transform: translateY(-50%);
+  z-index: 1;
+}
+.no-touch #cd-vertical-nav li {
+	list-style-type: none;
+  text-align: right;
+  line-height: 10px;
+}
+.no-touch #cd-vertical-nav a {
+  display: inline-block;
+  /* prevent weird movements on hover when you use a CSS3 transformation - webkit browsers */
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+.no-touch #cd-vertical-nav a:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.no-touch #cd-vertical-nav a span {
+  float: right;
+  display: inline-block;
+  -webkit-transform: scale(0.6);
+  -moz-transform: scale(0.6);
+  -ms-transform: scale(0.6);
+  -o-transform: scale(0.6);
+  transform: scale(0.6);
+}
+.no-touch #cd-vertical-nav a:hover span {
+  -webkit-transform: scale(1);
+  -moz-transform: scale(1);
+  -ms-transform: scale(1);
+  -o-transform: scale(1);
+  transform: scale(1);
+}
+.no-touch #cd-vertical-nav a:hover .cd-label {
+  opacity: 1;
+}
+.no-touch #cd-vertical-nav a.is-selected .cd-dot {
+  background-color: white;
+}
+.no-touch #cd-vertical-nav .cd-dot {
+  position: relative;
+  /* we set a top value in order to align the dot with the label. If you change label's font, you may need to change this top value*/
+  top: 8px;
+  height: 12px;
+  width: 12px;
+  border-radius: 50%;
+  background-color: #d88683;
+  -webkit-transition: -webkit-transform 0.2s, background-color 0.5s;
+  -moz-transition: -moz-transform 0.2s, background-color 0.5s;
+  transition: transform 0.2s, background-color 0.5s;
+  -webkit-transform-origin: 50% 50%;
+  -moz-transform-origin: 50% 50%;
+  -ms-transform-origin: 50% 50%;
+  -o-transform-origin: 50% 50%;
+  transform-origin: 50% 50%;
+}
+.no-touch #cd-vertical-nav .cd-label {
+  position: relative;
+  margin-right: 10px;
+  padding: .4em .5em;
+  font-family: 'Gotham';
+  color: white;
+  background-color: rgba(0,0,0,.75);
+  font-size: 14px;
+  font-size: 0.875rem;
+  -webkit-transition: -webkit-transform 0.2s, opacity 0.2s;
+  -moz-transition: -moz-transform 0.2s, opacity 0.2s;
+  transition: transform 0.2s, opacity 0.2s;
+  opacity: 0;
+  -webkit-transform-origin: 100% 50%;
+  -moz-transform-origin: 100% 50%;
+  -ms-transform-origin: 100% 50%;
+  -o-transform-origin: 100% 50%;
+  transform-origin: 100% 50%;
+}
